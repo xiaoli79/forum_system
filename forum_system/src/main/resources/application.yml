@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/forum_db?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    favicon:
+      enable: false
+  profiles:  #?????
+    active: dev
+# ?? Mybatis ? xml ????
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  configuration: # ???? MyBatis ??? SQL
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true  #??????
+# ???? MyBatis ??? SQL
+logging:
+  file:
+    name: logs/springboot.log
+  logback:
+    rollingpolicy:
+      max-file-size: 1KB
+      file-name-pattern: ${LOG_FILE}.%d{yyyy-MM-dd}.%i
+  level:
+    com:
+      example:
+        demo: debug
