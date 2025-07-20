@@ -1,7 +1,0 @@
-2025-07-20T12:35:15.667+08:00  INFO 2200 --- [main] com.forum_system.dao.ArticleMapperTest   : Starting ArticleMapperTest using Java 17.0.12 with PID 2200 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
-2025-07-20T12:35:15.672+08:00  INFO 2200 --- [main] com.forum_system.dao.ArticleMapperTest   : The following 1 profile is active: "dev"
-2025-07-20T12:35:17.167+08:00  INFO 2200 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-07-20T12:35:18.312+08:00  INFO 2200 --- [main] com.forum_system.dao.ArticleMapperTest   : Started ArticleMapperTest in 3.063 seconds (process running for 4.176)
-2025-07-20T12:35:19.977+08:00  INFO 2200 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-20T12:35:20.146+08:00  INFO 2200 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5831989d
-2025-07-20T12:35:20.149+08:00  INFO 2200 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

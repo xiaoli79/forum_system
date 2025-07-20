@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.forum_system.dao.ArticleMapper">
+<!--  resultMap则是用来创建映射关系-->
   <resultMap id="BaseResultMap" type="com.forum_system.model.Article">
+<!--  主键使用id标签来开头  column表示数据库里面的变量， property 则代表Java中的变量-->
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="boardId" jdbcType="BIGINT" property="boardid" />
     <result column="userId" jdbcType="BIGINT" property="userid" />
@@ -14,9 +16,12 @@
     <result column="createTime" jdbcType="TIMESTAMP" property="createtime" />
     <result column="updateTime" jdbcType="TIMESTAMP" property="updatetime" />
   </resultMap>
+<!--  这里面的resultMap和上面的resultMap分开，可能是因为content字段太大，为了提升效率，
+所以分开！如果要查询文章可以使用content~~-->
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.forum_system.model.Article">
     <result column="content" jdbcType="LONGVARCHAR" property="content" />
   </resultMap>
+<!--  这里面表示代码可重复使用的片段-->
   <sql id="Base_Column_List">
     id, boardId, userId, title, visitCount, replyCount, likeCount, state, deleteState, 
     createTime, updateTime
