@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.forum_system.dao.ArticleReplyMapper">
+  <resultMap id="BaseResultMap" type="com.forum_system.model.ArticleReply">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="articleId" jdbcType="BIGINT" property="articleid" />
+    <result column="postUserId" jdbcType="BIGINT" property="postuserid" />
+    <result column="replyId" jdbcType="BIGINT" property="replyid" />
+    <result column="replyUserId" jdbcType="BIGINT" property="replyuserid" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="likeCount" jdbcType="INTEGER" property="likecount" />
+    <result column="state" jdbcType="TINYINT" property="state" />
+    <result column="deleteState" jdbcType="TINYINT" property="deletestate" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="updateTime" jdbcType="TIMESTAMP" property="updatetime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, articleId, postUserId, replyId, replyUserId, content, likeCount, state, deleteState, 
+    createTime, updateTime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_article_reply
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from t_article_reply
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.forum_system.model.ArticleReply" useGeneratedKeys="true" keyProperty="id">
+    insert into t_article_reply (id, articleId, postUserId, 
+      replyId, replyUserId, content, 
+      likeCount, state, deleteState, 
+      createTime, updateTime)
+    values (#{id,jdbcType=BIGINT}, #{articleid,jdbcType=BIGINT}, #{postuserid,jdbcType=BIGINT}, 
+      #{replyid,jdbcType=BIGINT}, #{replyuserid,jdbcType=BIGINT}, #{content,jdbcType=VARCHAR}, 
+      #{likecount,jdbcType=INTEGER}, #{state,jdbcType=TINYINT}, #{deletestate,jdbcType=TINYINT}, 
+      #{createtime,jdbcType=TIMESTAMP}, #{updatetime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.forum_system.model.ArticleReply" useGeneratedKeys="true" keyProperty="id">
+    insert into t_article_reply
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="articleid != null">
+        articleId,
+      </if>
+      <if test="postuserid != null">
+        postUserId,
+      </if>
+      <if test="replyid != null">
+        replyId,
+      </if>
+      <if test="replyuserid != null">
+        replyUserId,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="likecount != null">
+        likeCount,
+      </if>
+      <if test="state != null">
+        state,
+      </if>
+      <if test="deletestate != null">
+        deleteState,
+      </if>
+      <if test="createtime != null">
+        createTime,
+      </if>
+      <if test="updatetime != null">
+        updateTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="articleid != null">
+        #{articleid,jdbcType=BIGINT},
+      </if>
+      <if test="postuserid != null">
+        #{postuserid,jdbcType=BIGINT},
+      </if>
+      <if test="replyid != null">
+        #{replyid,jdbcType=BIGINT},
+      </if>
+      <if test="replyuserid != null">
+        #{replyuserid,jdbcType=BIGINT},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="likecount != null">
+        #{likecount,jdbcType=INTEGER},
+      </if>
+      <if test="state != null">
+        #{state,jdbcType=TINYINT},
+      </if>
+      <if test="deletestate != null">
+        #{deletestate,jdbcType=TINYINT},
+      </if>
+      <if test="createtime != null">
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatetime != null">
+        #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.forum_system.model.ArticleReply">
+    update t_article_reply
+    <set>
+      <if test="articleid != null">
+        articleId = #{articleid,jdbcType=BIGINT},
+      </if>
+      <if test="postuserid != null">
+        postUserId = #{postuserid,jdbcType=BIGINT},
+      </if>
+      <if test="replyid != null">
+        replyId = #{replyid,jdbcType=BIGINT},
+      </if>
+      <if test="replyuserid != null">
+        replyUserId = #{replyuserid,jdbcType=BIGINT},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="likecount != null">
+        likeCount = #{likecount,jdbcType=INTEGER},
+      </if>
+      <if test="state != null">
+        state = #{state,jdbcType=TINYINT},
+      </if>
+      <if test="deletestate != null">
+        deleteState = #{deletestate,jdbcType=TINYINT},
+      </if>
+      <if test="createtime != null">
+        createTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatetime != null">
+        updateTime = #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.forum_system.model.ArticleReply">
+    update t_article_reply
+    set articleId = #{articleid,jdbcType=BIGINT},
+      postUserId = #{postuserid,jdbcType=BIGINT},
+      replyId = #{replyid,jdbcType=BIGINT},
+      replyUserId = #{replyuserid,jdbcType=BIGINT},
+      content = #{content,jdbcType=VARCHAR},
+      likeCount = #{likecount,jdbcType=INTEGER},
+      state = #{state,jdbcType=TINYINT},
+      deleteState = #{deletestate,jdbcType=TINYINT},
+      createTime = #{createtime,jdbcType=TIMESTAMP},
+      updateTime = #{updatetime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
