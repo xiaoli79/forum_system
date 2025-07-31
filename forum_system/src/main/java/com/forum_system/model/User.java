@@ -1,5 +1,6 @@
 package com.forum_system.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import java.util.Date;
@@ -7,163 +8,164 @@ import java.util.Date;
 
 @Data
 public class User {
-    private Long id;
+        private Long id;
 
-    private String username;
+        private String username;
+//      加入Json后，不再参与Json的序列化
+        @JsonIgnore
+        private String password;
 
-    private String password;
+        private String nickname;
 
-    private String nickname;
+        private String phonenum;
 
-    private String phonenum;
+        private String email;
 
-    private String email;
+        private Byte gender;
+        @JsonIgnore
+        private String salt;
 
-    private Byte gender;
+        private String avatarurl;
 
-    private String salt;
+        private Integer articlecount;
 
-    private String avatarurl;
+        private Byte isadmin;
 
-    private Integer articlecount;
+        private String remark;
 
-    private Byte isadmin;
+        private Byte state;
+        @JsonIgnore
+        private Byte deletestate;
 
-    private String remark;
+        private Date createtime;
 
-    private Byte state;
+        private Date updatetime;
 
-    private Byte deletestate;
+        public Long getId() {
+            return id;
+        }
 
-    private Date createtime;
+        public void setId(Long id) {
+            this.id = id;
+        }
 
-    private Date updatetime;
+        public String getUsername() {
+            return username;
+        }
 
-    public Long getId() {
-        return id;
-    }
+        public void setUsername(String username) {
+            this.username = username == null ? null : username.trim();
+        }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+        public String getPassword() {
+            return password;
+        }
 
-    public String getUsername() {
-        return username;
-    }
+        public void setPassword(String password) {
+            this.password = password == null ? null : password.trim();
+        }
 
-    public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
-    }
+        public String getNickname() {
+            return nickname;
+        }
 
-    public String getPassword() {
-        return password;
-    }
+        public void setNickname(String nickname) {
+            this.nickname = nickname == null ? null : nickname.trim();
+        }
 
-    public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
-    }
+        public String getPhonenum() {
+            return phonenum;
+        }
 
-    public String getNickname() {
-        return nickname;
-    }
+        public void setPhonenum(String phonenum) {
+            this.phonenum = phonenum == null ? null : phonenum.trim();
+        }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname == null ? null : nickname.trim();
-    }
+        public String getEmail() {
+            return email;
+        }
 
-    public String getPhonenum() {
-        return phonenum;
-    }
+        public void setEmail(String email) {
+            this.email = email == null ? null : email.trim();
+        }
 
-    public void setPhonenum(String phonenum) {
-        this.phonenum = phonenum == null ? null : phonenum.trim();
-    }
+        public Byte getGender() {
+            return gender;
+        }
 
-    public String getEmail() {
-        return email;
-    }
+        public void setGender(Byte gender) {
+            this.gender = gender;
+        }
 
-    public void setEmail(String email) {
-        this.email = email == null ? null : email.trim();
-    }
+        public String getSalt() {
+            return salt;
+        }
 
-    public Byte getGender() {
-        return gender;
-    }
+        public void setSalt(String salt) {
+            this.salt = salt == null ? null : salt.trim();
+        }
 
-    public void setGender(Byte gender) {
-        this.gender = gender;
-    }
+        public String getAvatarurl() {
+            return avatarurl;
+        }
 
-    public String getSalt() {
-        return salt;
-    }
+        public void setAvatarurl(String avatarurl) {
+            this.avatarurl = avatarurl == null ? null : avatarurl.trim();
+        }
 
-    public void setSalt(String salt) {
-        this.salt = salt == null ? null : salt.trim();
-    }
+        public Integer getArticlecount() {
+            return articlecount;
+        }
 
-    public String getAvatarurl() {
-        return avatarurl;
-    }
+        public void setArticlecount(Integer articlecount) {
+            this.articlecount = articlecount;
+        }
 
-    public void setAvatarurl(String avatarurl) {
-        this.avatarurl = avatarurl == null ? null : avatarurl.trim();
-    }
+        public Byte getIsadmin() {
+            return isadmin;
+        }
 
-    public Integer getArticlecount() {
-        return articlecount;
-    }
+        public void setIsadmin(Byte isadmin) {
+            this.isadmin = isadmin;
+        }
 
-    public void setArticlecount(Integer articlecount) {
-        this.articlecount = articlecount;
-    }
+        public String getRemark() {
+            return remark;
+        }
 
-    public Byte getIsadmin() {
-        return isadmin;
-    }
+        public void setRemark(String remark) {
+            this.remark = remark == null ? null : remark.trim();
+        }
 
-    public void setIsadmin(Byte isadmin) {
-        this.isadmin = isadmin;
-    }
+        public Byte getState() {
+            return state;
+        }
 
-    public String getRemark() {
-        return remark;
-    }
+        public void setState(Byte state) {
+            this.state = state;
+        }
 
-    public void setRemark(String remark) {
-        this.remark = remark == null ? null : remark.trim();
-    }
+        public Byte getDeletestate() {
+            return deletestate;
+        }
 
-    public Byte getState() {
-        return state;
-    }
+        public void setDeletestate(Byte deletestate) {
+            this.deletestate = deletestate;
+        }
 
-    public void setState(Byte state) {
-        this.state = state;
-    }
+        public Date getCreatetime() {
+            return createtime;
+        }
 
-    public Byte getDeletestate() {
-        return deletestate;
-    }
+        public void setCreatetime(Date createtime) {
+            this.createtime = createtime;
+        }
 
-    public void setDeletestate(Byte deletestate) {
-        this.deletestate = deletestate;
-    }
+        public Date getUpdatetime() {
+            return updatetime;
+        }
 
-    public Date getCreatetime() {
-        return createtime;
-    }
-
-    public void setCreatetime(Date createtime) {
-        this.createtime = createtime;
-    }
-
-    public Date getUpdatetime() {
-        return updatetime;
-    }
-
-    public void setUpdatetime(Date updatetime) {
-        this.updatetime = updatetime;
-    }
+        public void setUpdatetime(Date updatetime) {
+            this.updatetime = updatetime;
+        }
 }

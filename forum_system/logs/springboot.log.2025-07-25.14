@@ -1,0 +1,7 @@
+2025-07-25T16:32:15.274+08:00  INFO 35492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-25T16:32:15.278+08:00  INFO 35492 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 907 ms
+2025-07-25T16:32:15.613+08:00  INFO 35492 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-07-25T16:32:15.879+08:00  INFO 35492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-25T16:32:15.887+08:00  INFO 35492 --- [main] c.forum_system.ForumSystemApplication    : Started ForumSystemApplication in 1.995 seconds (process running for 2.535)
+2025-07-25T16:34:07.155+08:00  INFO 35492 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-25T16:34:07.156+08:00  INFO 35492 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'

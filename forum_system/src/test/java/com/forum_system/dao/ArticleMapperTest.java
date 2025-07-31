@@ -18,7 +18,6 @@ class ArticleMapperTest {
     void insert() {
 
 
-
     }
 
     @Test
@@ -35,5 +34,10 @@ class ArticleMapperTest {
 
     @Test
     void updateByPrimaryKeySelective() {
+    }
+
+    @Test
+    void selectAll() {
+        System.out.println(articleMapper.selectAll());
     }
 }

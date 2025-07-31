@@ -22,7 +22,7 @@ public interface UserMapper {
 
 //    根据ID来查询用户的信息
     @Select("select * from t_user where id = #{id}")
-    User selectById(@Param("id") int id);
+    User selectById(@Param("id") long id);
 
 //    根据用户名来查询用户的信息~
     @Select("select * from t_user where username = #{username}")

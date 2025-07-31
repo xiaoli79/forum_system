@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.forum_system.dao.ArticleMapper">
+<!--    自定义结果集的映射！！-->
+    <resultMap id="AllInfoResultMap" type="com.forum_system.model.Article">
+<!--        关联用户的映射-->
+<!--        从这里面找出关于u_相关的属性，然后吧它赋值给user即可完成！！-->
+        <association property="user" resultMap="com.forum_system.dao.UserMapper.BaseResultMap"
+        columnPrefix="u_">
+        </association>
+    </resultMap>
+    <select id="selectAll" resultMap="AllInfoResultMap">
+        select
+            u.id as u_id,
+            U.avatarUrl as u_avatarUrl,
+            u.nickname as u_nickname,
+            a.id,
+            a.boardId,
+            a.userId,
+            a.title,
+            a.visitcount,
+            a.replycount,
+            a.likeCount,
+            a.state,
+            a.createTime,
+            a.updateTime
+        from
+            t_article ault_user u
+        where
+            a.userId = u.id
+          and a.deleteState = 0
+        order by a.createTime desc
+    </select>
+</mapper>

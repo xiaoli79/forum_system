@@ -1,0 +1,6 @@
+2025-07-31T11:15:33.967+08:00  INFO 33960 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-31T11:15:34.223+08:00  WARN 33960 --- [http-nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [153] milliseconds.
+2025-07-31T11:15:36.731+08:00 ERROR 33960 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : Invalid bound statement (not found): com.forum_system.dao.ArticleMapper.selectAll
+2025-07-31T11:15:38.125+08:00 ERROR 33960 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : Invalid bound statement (not found): com.forum_system.dao.ArticleMapper.selectAll
+2025-07-31T11:15:47.145+08:00  INFO 33960 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-31T11:15:47.236+08:00  INFO 33960 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

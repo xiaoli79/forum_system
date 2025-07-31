@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/forum_db?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/forum_db?characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -9,6 +9,9 @@ spring:
       enable: false
   profiles:  #?????
     active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss # 日期格式
+#    default-property-inclusion:NON_NULL # 不为null时序列化
 # ?? Mybatis ? xml ????
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
@@ -27,3 +30,8 @@ logging:
     com:
       example:
         demo: debug
+  bit-forum:
+    login:
+      url: sign-in.html
+    index: # ⾸⻚配置节点
+      board-num: 9

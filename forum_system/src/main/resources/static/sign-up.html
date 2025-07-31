@@ -146,13 +146,47 @@ $(function () {
     }
     
     // 构造数据
+    let getData ={
+      username:$('#username').val(),
+      nickname:$('#nickname').val(),
+      password:$('#password').val(),
+      passwordRepeat:$('#passwordRepeat').val()
+    };
     
     // 发送AJAX请求 
     // contentType = application/x-www-form-urlencoded
     // 成功后跳转到 sign-in.html
     $.ajax ({
-      
+      type:"get",
+      url:"user/register",
+      data:getData,
+      contentType:"application/x-www-form-urlencoded",
+      // 这里面的result是后端返回的数据
+      success:function (result){
+        console.log(result.data)
+        if(result.code ==0 ){
+          $.toast({
+            heading:"成功",
+            text:"注册成功，请登录",
+            icon:"success"
+          });
+          window.location.href='sign-in.html';
+        }else{
+          $.toast({
+            heading:"警告",
+            text:result.message,
+            icon:"warning"
+          });
 
+        }
+      },
+      error:function (){
+        $.toast({
+          heading:"错误",
+          text:"访问出现问题，请联系管理员",
+          icon:'error'
+        });
+      }
     });
   });
 

@@ -1353,31 +1353,6 @@ type Ui_d_EditorUi = EditorUi;
 declare namespace Ui_d {
     export { Ui_d_Registry as Registry, PublicDialog_d as Dialog, PublicInlineContent_d as InlineContent, PublicMenu_d as Menu, PublicView_d as View, PublicSidebar_d as Sidebar, PublicToolbar_d as Toolbar, Ui_d_EditorUiApi as EditorUiApi, Ui_d_EditorUi as EditorUi, };
 }
-interface WindowParams {
-    readonly inline?: 'cursor' | 'toolbar';
-    readonly ariaAttrs?: boolean;
-}
-declare type InstanceApi<T extends DialogData> = UrlDialogInstanceApi | DialogInstanceApi<T>;
-interface WindowManagerImpl {
-    open: <T extends DialogData>(config: DialogSpec<T>, params: WindowParams | undefined, closeWindow: (dialog: DialogInstanceApi<T>) => void) => DialogInstanceApi<T>;
-    openUrl: (config: UrlDialogSpec, closeWindow: (dialog: UrlDialogInstanceApi) => void) => UrlDialogInstanceApi;
-    alert: (message: string, callback: () => void) => void;
-    confirm: (message: string, callback: (state: boolean) => void) => void;
-    close: (dialog: InstanceApi<any>) => void;
-}
-interface WindowManager {
-    open: <T extends DialogData>(config: DialogSpec<T>, params?: WindowParams) => DialogInstanceApi<T>;
-    openUrl: (config: UrlDialogSpec) => UrlDialogInstanceApi;
-    alert: (message: string, callback?: () => void, scope?: any) => void;
-    confirm: (message: string, callback?: (state: boolean) => void, scope?: any) => void;
-    close: () => void;
-}
-interface ExecCommandEvent {
-    command: string;
-    ui: boolean;
-    value?: any;
-}
-interface BeforeGetContentEvent extends GetContentArgs {
     selection?: boolean;
 }
 interface GetContentEvent extends BeforeGetContentEvent {

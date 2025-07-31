@@ -113,11 +113,45 @@
         }
 
         // 构造数据
+        var getData = {
+          username:$('#username').val(),
+          password:$('#password').val()
+        };
         
         // 发送AJAX请求，成功后跳转到index.html
         $.ajax({
-          
+          type:"get",
+          url:"user/login",
+          data:getData,
+          contentType:"application/x-www-form-urlencoded",
+          success:function (result){
+            console.log(11111)
+            console.log("Response from server:", result);
+            console.log(22222)
+            if(result.code != 0){
+              $.toast({
+                heading:"警告",
+                text:result.message,
+                icon:"warning"
+              });
+            }else{
+              $.toast({
+                heading:"成功",
+                text:"注册成功，请登录",
+                icon:"success"
+              });
+              window.location.href = "index.html";
+            }
+          },
+          error:function (){
+            $.toast({
+              heading:"错误",
+              text:"访问出现问题，请联系管理员",
+              icon:'error'
+            });
+          }
         });
+
       });
 
       //

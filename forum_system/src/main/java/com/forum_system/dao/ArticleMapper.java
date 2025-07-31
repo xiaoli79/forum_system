@@ -1,7 +1,9 @@
 package com.forum_system.dao;
 
 import com.forum_system.model.Article;
-import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.*;
+
+import java.util.List;
 
 @Mapper
 public interface ArticleMapper {
@@ -18,4 +20,7 @@ public interface ArticleMapper {
     int updateByPrimaryKeyWithBLOBs(Article row);
 
     int updateByPrimaryKey(Article row);
+
+    List<Article> selectAll();
+
 }

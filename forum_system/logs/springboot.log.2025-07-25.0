@@ -1,0 +1,6 @@
+2025-07-25T15:09:10.079+08:00  INFO 14916 --- [main] c.f.service.Impl.UserServiceImplTest     : Starting UserServiceImplTest using Java 17.0.12 with PID 14916 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-07-25T15:09:10.085+08:00  INFO 14916 --- [main] c.f.service.Impl.UserServiceImplTest     : The following 1 profile is active: "dev"
+2025-07-25T15:09:11.988+08:00  INFO 14916 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-07-25T15:09:12.612+08:00  INFO 14916 --- [main] c.f.service.Impl.UserServiceImplTest     : Started UserServiceImplTest in 2.976 seconds (process running for 4.288)
+2025-07-25T15:09:13.909+08:00  INFO 14916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-25T15:11:12.026+08:00  INFO 16256 --- [main] c.f.service.Impl.UserServiceImplTest     : Starting UserServiceImplTest using Java 17.0.12 with PID 16256 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)

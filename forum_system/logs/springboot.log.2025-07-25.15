@@ -1,0 +1,7 @@
+2025-07-25T16:34:07.157+08:00  INFO 35492 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-25T16:34:07.271+08:00 ERROR 35492 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : Cannot invoke "com.forum_system.model.User.getState()" because "user" is null
+2025-07-25T16:35:18.864+08:00  INFO 35492 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-25T16:35:18.967+08:00  INFO 35492 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d0098cb
+2025-07-25T16:35:18.969+08:00  INFO 35492 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-25T16:35:24.463+08:00  INFO 35492 --- [http-nio-8080-exec-4] c.f.service.Impl.IArticleServiceImpl     : code=0, message=成功
+2025-07-25T16:35:59.775+08:00  INFO 35492 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete

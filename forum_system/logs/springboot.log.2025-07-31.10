@@ -1,0 +1,6 @@
+2025-07-31T08:30:57.097+08:00  INFO 34240 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-31T08:30:57.200+08:00  INFO 34240 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-31T08:30:57.202+08:00  INFO 34240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-31T08:30:57.208+08:00  INFO 34240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-31T08:31:01.346+08:00  INFO 37976 --- [main] c.forum_system.ForumSystemApplication    : Starting ForumSystemApplication using Java 17.0.12 with PID 37976 (E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system\target\classes started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-07-31T08:31:01.353+08:00  INFO 37976 --- [main] c.forum_system.ForumSystemApplication    : The following 1 profile is active: "dev"

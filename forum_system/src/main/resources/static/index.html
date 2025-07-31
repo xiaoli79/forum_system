@@ -311,12 +311,63 @@
     // 成功后，手动设置用户信息
     // $('#index_nav_avatar').css('background-image', 'url(' + user.avatarUrl + ')');
     $.ajax({
+      type: "get",
+      url:"user/info",
+      success:function(result){
+        if(result.code == 0){
+          let user = result.data;
+        //   设置头像和昵称
+          if(!user.avatarUrl){
+            user.avatarUrl = avatarUrl;
+          }
+          // 设置页面上的头像
+          $('#index_nav_avatar').css('background-image', 'url(' + user.avatarUrl + ')');
+          // 设置昵称
+          $('#index_nav_nickname').html(user.nickname);
+          // 设置用户组
+          let subName = user.isAdmin == 1 ? '管理员' : '普通用户';
+          $('#index_nav_name_sub').html(subName);
+        }else{
+          $.toast({
+            heading:"警告",
+            text:result.message,
+            icon:"warning"
+          });
+        }
+      },error:function (){
+        $.toast({
+          heading: "错误",
+          text: "访问出现问题，请联系管理员",
+          icon: 'error'
+        })
+      }
+
 
     });
 
     // ========================= 获取版块信息 =======================
     // 成功后，调用buildTopBoard()方法，构建版块列表
     $.ajax({
+      type:"get",
+      url:"board/toList",
+      success:function (result){
+        if(result.code == 0){
+          buildTopBoard(result.data)
+        }else{
+          $.toast({
+            heading:"警告",
+            text:result.message,
+            icon:"warning"
+          });
+        }
+
+      },error:function (){
+        $.toast({
+          heading: "错误",
+          text: "访问出现问题，请联系管理员",
+          icon: 'error'
+        })
+      }
       
     });
 
@@ -392,6 +443,14 @@
     // 成功后，跳转到sign-in.html
     $('#index_user_logout').click(function () {
       $.ajax({
+        type:"get",
+        url:"user/logout",
+        contentType:"application/x-www-form-urlencoded",
+        success:function (result){
+          if(result.code == 0){
+            window.location.href = "sign-in.html"
+          }
+        }
         
       });
     });
