@@ -9,6 +9,8 @@ import com.forum_system.model.User;
 import com.forum_system.service.IArticleService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
+import lombok.NonNull;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,6 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
+
+@Slf4j
 @RequestMapping("/article")
 @RestController
 public class ArticleController {
@@ -49,12 +53,28 @@ public class ArticleController {
     }
     @RequestMapping("/getAllByBoardId")
     public AppResult<List<Article>> getAllByBoardId(Long boardId) {
-
-        List<Article> articles = articleService.selectAll();
+        List<Article> articles;
+        if(boardId == null){
+            articles = articleService.selectAll();
+        }else{
+            articles = articleService.selectByBoardId(boardId);
+        }
         if(articles == null){
             articles = new ArrayList<>();
         }
         return AppResult.success(articles);
     }
 
+
+
+    @RequestMapping("/details")
+    public AppResult<Article> details(@NonNull @RequestParam("id") long id) {
+
+        Article article = articleService.selectDetailById(id);
+        if(article == null){
+            log.warn(ResultCode.FAILED_ARTICLE_NOT_EXISTS.toString());
+            return AppResult.failed(ResultCode.FAILED_ARTICLE_NOT_EXISTS);
+        }
+        return AppResult.success(article);
+    }
 }

@@ -1,6 +1,7 @@
 package com.forum_system.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 import java.util.Date;
@@ -24,7 +25,7 @@ public class User {
         private Byte gender;
         @JsonIgnore
         private String salt;
-
+        @JsonInclude(JsonInclude.Include.ALWAYS)
         private String avatarurl;
 
         private Integer articlecount;

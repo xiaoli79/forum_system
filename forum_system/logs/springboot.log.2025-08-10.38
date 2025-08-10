@@ -1,0 +1,6 @@
+2025-08-10T16:21:51.311+08:00 ERROR 26080 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-10T16:21:51.323+08:00 ERROR 26080 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-10T16:21:52.873+08:00 ERROR 26080 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-10T16:22:16.822+08:00 ERROR 26080 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-10T16:22:16.844+08:00 ERROR 26080 --- [http-nio-8080-exec-5] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-10T16:22:26.572+08:00  INFO 26080 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete

@@ -11,10 +11,10 @@ spring:
     active: dev
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss # 日期格式
-#    default-property-inclusion:NON_NULL # 不为null时序列化
+    default-property-inclusion: non_null # 不为null时序列化
 # ?? Mybatis ? xml ????
 mybatis:
-  mapper-locations: classpath:mapper/*Mapper.xml
+  mapper-locations: classpath:mapper/**/*Mapper.xml
   configuration: # ???? MyBatis ??? SQL
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true  #??????

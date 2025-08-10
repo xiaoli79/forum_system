@@ -23,4 +23,13 @@ public interface ArticleMapper {
 
     List<Article> selectAll();
 
+
+    List<Article> selectAllByBoardId(@Param("boardId") long boardId);
+
+
+
+    Article selectDetailById(@Param("id") long id);
+
+
+
 }

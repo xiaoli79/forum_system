@@ -1,7 +1,0 @@
-2025-07-31T08:34:14.438+08:00  INFO 25208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 896 ms
-2025-07-31T08:34:14.785+08:00  INFO 25208 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-07-31T08:34:15.044+08:00  INFO 25208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-07-31T08:34:15.052+08:00  INFO 25208 --- [main] c.forum_system.ForumSystemApplication    : Started ForumSystemApplication in 2.003 seconds (process running for 2.621)
-2025-07-31T08:34:22.185+08:00  INFO 25208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-31T08:34:22.190+08:00  INFO 25208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-31T08:34:22.191+08:00  INFO 25208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

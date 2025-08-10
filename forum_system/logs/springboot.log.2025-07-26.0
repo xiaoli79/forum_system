@@ -1,5 +1,0 @@
-2025-07-26T09:13:48.036+08:00  WARN 32664 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11h20m9s876ms375µs600ns).
-2025-07-26T10:09:10.081+08:00 ERROR 32664 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : Cannot invoke "com.forum_system.model.User.getState()" because "user" is null
-2025-07-26T10:20:52.273+08:00  WARN 32664 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m4s888ms).
-2025-07-26T10:29:41.200+08:00  WARN 32664 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m18s846ms100µs700ns).
-2025-07-26T10:34:40.993+08:00  WARN 32664 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m59s792ms321µs200ns).

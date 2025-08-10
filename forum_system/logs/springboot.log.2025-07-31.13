@@ -1,6 +1,0 @@
-2025-07-31T08:31:39.865+08:00  WARN 37976 --- [http-nio-8080-exec-9] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [151] milliseconds.
-2025-07-31T08:31:45.357+08:00 ERROR 37976 --- [http-nio-8080-exec-9] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
-2025-07-31T08:33:56.044+08:00  INFO 37976 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-31T08:33:56.155+08:00  INFO 37976 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-07-31T08:33:56.163+08:00  INFO 37976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-31T08:33:56.169+08:00  INFO 37976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -30,4 +30,14 @@ class IArticleServiceImplTest {
     void selectAll() {
         System.out.println();
     }
+
+    @Test
+    void selectByBoardId() {
+        System.out.println(iArticleService.selectByBoardId(2L));
+    }
+
+    @Test
+    void selectDetailById() {
+        System.out.println(iArticleService.selectDetailById(100L));
+    }
 }

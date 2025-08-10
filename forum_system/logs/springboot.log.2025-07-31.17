@@ -1,6 +1,0 @@
-2025-07-31T08:34:27.918+08:00 ERROR 25208 --- [http-nio-8080-exec-9] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
-2025-07-31T08:34:45.134+08:00  WARN 25208 --- [http-nio-8080-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [141] milliseconds.
-2025-07-31T08:34:47.924+08:00 ERROR 25208 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
-2025-07-31T08:35:17.245+08:00 ERROR 25208 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
-2025-07-31T08:36:59.298+08:00  INFO 25208 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-31T08:36:59.385+08:00  INFO 25208 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

@@ -256,7 +256,28 @@
     // ===================== 请求帖子详情 ===================== 
     // url: '/article/getById?id=' + currentArticle.id,
     // 成功后， 调用initArticleDetails()方法，初始化页面内容
+    log.info(21212122112)
     $.ajax({
+      type:"get",
+      url: '/article/details?id=' + currentArticle.id,
+      success:function (result) {
+        log.info(result.data);
+        if(result.code ==0){
+          initArticleDetails(result.data);
+        }else{
+          $.toast({
+            heading:"警告",
+            text:result.message,
+            icon:"warning"
+          });
+        }
+      },error:function () {
+        $.toast({
+          heading:"错误",
+          text:"访问出现问题，请联系管理员",
+          icon:'error'
+        });
+      }
       
 
     });
@@ -279,13 +300,13 @@
       // 设置帖子标题
       $('#details_article_title').html(article.title);
       // 设置发布时间
-      $('#details_article_createTime').html(article.createTime);
+      $('#details_article_createTime').html(article.createtime);
       // 设置访问数量
-      $('#details_article_visitCount').html(article.visitCount);
+      $('#details_article_visitCount').html(article.visitcount);
       // 设置点赞数
-      $('#details_article_likeCount').html(article.likeCount);
+      $('#details_article_likeCount').html(article.likecount);
       // 设置回复数
-      $('#details_article_replyCount').html(article.replyCount);
+      $('#details_article_replyCount').html(article.replycount);
       // 帖子正文
       $('#details_article_content_title').html(article.title)
       // 让内容以markdown 的形式显示

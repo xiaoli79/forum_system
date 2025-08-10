@@ -1,0 +1,7 @@
+2025-08-10T16:03:45.388+08:00  INFO 27416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-10T16:03:45.449+08:00 ERROR 27416 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-10T16:03:45.605+08:00 ERROR 27416 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
+2025-08-10T16:03:45.632+08:00  INFO 27416 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-10T16:03:45.818+08:00  INFO 27416 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52f9c817
+2025-08-10T16:03:45.833+08:00  INFO 27416 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-10T16:04:18.207+08:00  WARN 27416 --- [http-nio-8080-exec-6] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [194] milliseconds.

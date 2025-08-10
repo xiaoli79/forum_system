@@ -1,6 +1,0 @@
-2025-07-25T16:14:41.155+08:00  INFO 27196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-07-25T16:31:14.533+08:00  INFO 33844 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Starting IArticleServiceImplTest using Java 17.0.12 with PID 33844 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
-2025-07-25T16:31:14.536+08:00  INFO 33844 --- [main] c.f.s.Impl.IArticleServiceImplTest       : The following 1 profile is active: "dev"
-2025-07-25T16:31:16.516+08:00  INFO 33844 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-07-25T16:31:17.160+08:00  INFO 33844 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Started IArticleServiceImplTest in 3.048 seconds (process running for 4.215)
-2025-07-25T16:31:57.139+08:00  INFO 35072 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Starting IArticleServiceImplTest using Java 17.0.12 with PID 35072 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)

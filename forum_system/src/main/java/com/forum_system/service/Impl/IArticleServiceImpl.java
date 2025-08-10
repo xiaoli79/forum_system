@@ -84,5 +84,53 @@ public class IArticleServiceImpl implements IArticleService {
        return articleMapper.selectAll();
     }
 
+    @Override
+    public List<Article> selectByBoardId(long boardId) {
+        if(boardId == 0 || boardId < 0){
+            log.warn(ResultCode.FAILED_PARAMS_VALIDATE.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_PARAMS_VALIDATE));
+        }
+//        参看板块是存在，如果存在，则继续下一步
+        Board board = boardService.selectById(boardId);
+        if(board == null) {
+            log.warn(ResultCode.FAILED_PARAMS_VALIDATE.toString()+"id不存在");
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_PARAMS_VALIDATE));
+        }
+        return articleMapper.selectAllByBoardId(boardId);
+    }
 
+
+
+//   编写业务代码的逻辑
+//    查询帖子的详情信息
+    @Override
+    public Article selectDetailById(long id) {
+//      参数校验
+        if(id == 0 || id < 0){
+            log.warn(ResultCode.FAILED_PARAMS_VALIDATE.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_PARAMS_VALIDATE));
+        }
+
+
+//      查询帖子详情
+        Article article = articleMapper.selectDetailById(id);
+        if(article == null) {
+            log.warn(ResultCode.FAILED_ARTICLE_NOT_EXISTS.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_ARTICLE_NOT_EXISTS));
+        }
+
+//        访问次数+1
+        Article updataedArticle =  new Article();
+        updataedArticle.setId(id);
+        updataedArticle.setVisitcount(article.getVisitcount()+1);
+        int row = articleMapper.updateByPrimaryKeySelective(updataedArticle);
+        if(row != 1 ) {
+            log.warn(ResultCode.ERROR_SERVICES.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.ERROR_SERVICES));
+        }
+
+//      更新返回对象的帖子数量
+        article.setVisitcount(article.getVisitcount()+1);
+        return article;
+    }
 }

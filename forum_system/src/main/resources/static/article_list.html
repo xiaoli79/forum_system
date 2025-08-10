@@ -86,6 +86,28 @@
       }
       // 发送请求， 成功后，显示版块相关信息
       $.ajax({
+        type:"get",
+        url:"board/getById?id="+boardId,
+        success:function (result) {
+          if(result.code == 0){
+            $('#article_list_board_title').html(result.data.name);
+            $("#article_list_count_board").html(result.data.articlecount);
+          }else{
+            $.toast({
+              heading:"警告",
+              text:result.data.message,
+              icon:"warning"
+            });
+          }
+
+        },error:function () {
+          $.toast({
+            heading: "错误",
+            text: "访问出现问题，请联系管理员",
+            icon: 'error'
+          })
+        }
+
         
       });
     }
@@ -94,10 +116,10 @@
     // 成功后，调用listBuildArticleList()方法，构建帖子列表
     $.ajax({
       type:"get",
-      url:"article/getAllByBoardId",
+      url:"article/getAllByBoardId"+queryString,
       success:function (result){
         console.log(result);
-        if(result.code ==0){
+        if(result.code == 0){
           listBuildArticleList(result.data);
         }else{
           $.toast({
@@ -166,7 +188,7 @@
           + ' <path d="M18.42 15.61a2.1 2.1 0 0 1 2.97 2.97l-3.39 3.42h-3v-3l3.42 -3.39z">'
           + ' </path>'
           + ' </svg> '
-          + article.createTime
+          + article.createtime
           + ' </li>'
           + ' </ul>'
           + ' </div>'
@@ -182,7 +204,7 @@
           + ' d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7">'
           + ' </path>'
           + ' </svg> '
-          + article.visitCount
+          + article.visitcount
           + ' </li>'
           + ' <li class="list-inline-item">'
           + ' <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart"'
@@ -193,7 +215,7 @@
           + ' d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572">'
           + ' </path>'
           + ' </svg> '
-          + article.likeCount
+          + article.likecount
           + ' </li>'
           + ' <li class="list-inline-item">'
           + ' <svg xmlns="http://www.w3.org/2000/svg"'
@@ -206,7 +228,7 @@
           + ' <path d="M8 12l0 .01"></path>'
           + ' <path d="M16 12l0 .01"></path>'
           + ' </svg> '
-          + article.replyCount
+          + article.replycount
           + ' </li>'
           + ' </ul>'
           + ' </div>'

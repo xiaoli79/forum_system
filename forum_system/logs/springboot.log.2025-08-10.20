@@ -1,0 +1,6 @@
+2025-08-10T16:02:13.174+08:00  INFO 19520 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-10T16:02:26.958+08:00  WARN 19520 --- [http-nio-8080-exec-5] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [188] milliseconds.
+2025-08-10T16:02:37.250+08:00 ERROR 19520 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-10T16:03:33.035+08:00  INFO 19520 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-10T16:03:33.198+08:00  INFO 19520 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-10T16:03:33.202+08:00  INFO 19520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...

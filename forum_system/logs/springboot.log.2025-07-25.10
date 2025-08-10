@@ -1,8 +1,0 @@
-2025-07-25T16:14:36.813+08:00  INFO 27196 --- [main] c.f.s.Impl.IArticleServiceImplTest       : The following 1 profile is active: "dev"
-2025-07-25T16:14:38.761+08:00  INFO 27196 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-07-25T16:14:39.372+08:00  INFO 27196 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Started IArticleServiceImplTest in 2.975 seconds (process running for 4.005)
-2025-07-25T16:14:40.735+08:00  INFO 27196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-25T16:14:40.903+08:00  INFO 27196 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20155dae
-2025-07-25T16:14:40.912+08:00  INFO 27196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-25T16:14:41.057+08:00  INFO 27196 --- [main] c.f.service.Impl.IArticleServiceImpl     : code=0, message=成功
-2025-07-25T16:14:41.114+08:00  INFO 27196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...

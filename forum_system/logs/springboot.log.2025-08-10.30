@@ -1,0 +1,7 @@
+2025-08-10T16:09:59.748+08:00  INFO 7352 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-10T16:09:59.751+08:00  INFO 7352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-10T16:09:59.751+08:00  INFO 7352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-10T16:09:59.899+08:00 ERROR 7352 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
+2025-08-10T16:09:59.928+08:00  INFO 7352 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-10T16:10:00.105+08:00  INFO 7352 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23a2e23f
+2025-08-10T16:10:00.108+08:00  INFO 7352 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

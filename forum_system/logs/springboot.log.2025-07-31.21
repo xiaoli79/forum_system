@@ -1,6 +1,0 @@
-2025-07-31T08:37:12.027+08:00 ERROR 17848 --- [http-nio-8080-exec-10] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
-2025-07-31T08:37:12.048+08:00 ERROR 17848 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
-2025-07-31T08:37:13.669+08:00  WARN 17848 --- [http-nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [161] milliseconds.
-2025-07-31T08:37:13.773+08:00 ERROR 17848 --- [http-nio-8080-exec-5] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
-2025-07-31T08:40:10.177+08:00  INFO 17848 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-31T08:40:10.257+08:00  INFO 17848 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

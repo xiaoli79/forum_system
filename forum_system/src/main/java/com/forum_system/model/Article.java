@@ -35,6 +35,8 @@ public class Article {
 //  关联对象
     private User user;
 
+    private Board  board;
+
     public User getUser() {
         return user;
     }

@@ -1,0 +1,6 @@
+2025-08-10T15:44:22.905+08:00  WARN 4880 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [201] milliseconds.
+2025-08-10T15:47:45.860+08:00  INFO 4880 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-10T15:47:45.971+08:00  INFO 4880 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-10T15:47:45.974+08:00  INFO 4880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-10T15:47:45.981+08:00  INFO 4880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-10T15:58:08.178+08:00  INFO 26192 --- [main] c.forum_system.ForumSystemApplication    : Starting ForumSystemApplication using Java 17.0.12 with PID 26192 (E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system\target\classes started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)

@@ -1,7 +1,0 @@
-2025-07-31T11:15:19.902+08:00  INFO 33960 --- [main] c.forum_system.ForumSystemApplication    : Started ForumSystemApplication in 1.93 seconds (process running for 2.454)
-2025-07-31T11:15:27.183+08:00  INFO 33960 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-31T11:15:27.183+08:00  INFO 33960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-31T11:15:27.185+08:00  INFO 33960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-07-31T11:15:27.211+08:00 ERROR 33960 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : Invalid bound statement (not found): com.forum_system.dao.ArticleMapper.selectAll
-2025-07-31T11:15:33.770+08:00  INFO 33960 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-31T11:15:33.965+08:00  INFO 33960 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@780d9f00

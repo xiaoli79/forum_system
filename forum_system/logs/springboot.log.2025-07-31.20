@@ -1,7 +1,0 @@
-2025-07-31T08:37:08.681+08:00  INFO 17848 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-31T08:37:08.685+08:00  INFO 17848 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-07-31T08:37:08.727+08:00 ERROR 17848 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
-2025-07-31T08:37:08.803+08:00 ERROR 17848 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
-2025-07-31T08:37:08.822+08:00  INFO 17848 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-31T08:37:08.956+08:00  INFO 17848 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d6dc09d
-2025-07-31T08:37:08.957+08:00  INFO 17848 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

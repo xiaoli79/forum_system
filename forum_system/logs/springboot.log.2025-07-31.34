@@ -1,6 +1,0 @@
-2025-07-31T11:37:03.018+08:00  INFO 40504 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-07-31T11:37:03.688+08:00  INFO 40504 --- [main] com.forum_system.dao.ArticleMapperTest   : Started ArticleMapperTest in 3.133 seconds (process running for 4.346)
-2025-07-31T11:40:42.063+08:00  INFO 38756 --- [main] com.forum_system.dao.ArticleMapperTest   : Starting ArticleMapperTest using Java 17.0.12 with PID 38756 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
-2025-07-31T11:40:42.065+08:00  INFO 38756 --- [main] com.forum_system.dao.ArticleMapperTest   : The following 1 profile is active: "dev"
-2025-07-31T11:40:43.955+08:00  INFO 38756 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-07-31T11:40:44.584+08:00  INFO 38756 --- [main] com.forum_system.dao.ArticleMapperTest   : Started ArticleMapperTest in 2.927 seconds (process running for 4.055)

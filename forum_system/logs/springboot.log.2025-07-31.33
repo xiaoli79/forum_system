@@ -1,6 +1,0 @@
-2025-07-31T11:23:33.138+08:00  INFO 28880 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Starting IArticleServiceImplTest using Java 17.0.12 with PID 28880 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
-2025-07-31T11:23:33.146+08:00  INFO 28880 --- [main] c.f.s.Impl.IArticleServiceImplTest       : The following 1 profile is active: "dev"
-2025-07-31T11:23:35.453+08:00  INFO 28880 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-07-31T11:23:36.166+08:00  INFO 28880 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Started IArticleServiceImplTest in 3.531 seconds (process running for 4.796)
-2025-07-31T11:37:00.998+08:00  INFO 40504 --- [main] com.forum_system.dao.ArticleMapperTest   : Starting ArticleMapperTest using Java 17.0.12 with PID 40504 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
-2025-07-31T11:37:01.001+08:00  INFO 40504 --- [main] com.forum_system.dao.ArticleMapperTest   : The following 1 profile is active: "dev"
