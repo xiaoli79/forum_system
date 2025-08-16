@@ -1,0 +1,6 @@
+2025-08-12T11:01:50.767+08:00 ERROR 35472 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
+2025-08-12T11:01:54.364+08:00 ERROR 35472 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
+2025-08-12T11:35:48.058+08:00 ERROR 35472 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-12T11:36:09.136+08:00 ERROR 35472 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-12T11:36:09.291+08:00 ERROR 35472 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
+2025-08-12T11:38:31.852+08:00 ERROR 35472 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : No static resource null.

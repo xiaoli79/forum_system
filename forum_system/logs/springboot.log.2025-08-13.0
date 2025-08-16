@@ -1,0 +1,7 @@
+2025-08-13T19:26:49.401+08:00  INFO 27824 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Starting IArticleServiceImplTest using Java 17.0.12 with PID 27824 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-13T19:26:49.406+08:00  INFO 27824 --- [main] c.f.s.Impl.IArticleServiceImplTest       : The following 1 profile is active: "dev"
+2025-08-13T19:26:51.689+08:00  INFO 27824 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-13T19:26:52.460+08:00  INFO 27824 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Started IArticleServiceImplTest in 3.521 seconds (process running for 4.789)
+2025-08-13T19:26:54.014+08:00  INFO 27824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-13T19:26:54.216+08:00  INFO 27824 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3428420d
+2025-08-13T19:26:54.220+08:00  INFO 27824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

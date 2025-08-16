@@ -1,0 +1,6 @@
+2025-08-16T15:16:56.182+08:00  INFO 36672 --- [main] c.forum_system.ForumSystemApplication    : Starting ForumSystemApplication using Java 17.0.12 with PID 36672 (E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system\target\classes started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-16T15:16:56.186+08:00  INFO 36672 --- [main] c.forum_system.ForumSystemApplication    : The following 1 profile is active: "dev"
+2025-08-16T15:16:57.022+08:00  INFO 36672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-16T15:16:57.030+08:00  INFO 36672 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-16T15:16:57.035+08:00  INFO 36672 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-16T15:16:57.076+08:00  INFO 36672 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext

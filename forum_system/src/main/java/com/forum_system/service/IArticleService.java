@@ -26,5 +26,28 @@ public interface IArticleService {
 
     Article selectDetailById( long id);
 
+    /**
+     * 这里面是帖子id
+     * @param id
+     * @return
+     */
+
+    Article selectById(long id);
+
+    void modify(long id ,String title,String content);
+
+    void thumpsUpById(long id);
+
+
+    void deleteById(long id);
+
+    void addOneReplyCountById(long id);
+
+
+    List<Article> selectByUserId(Long userId);
+
+
+
+
 
 }

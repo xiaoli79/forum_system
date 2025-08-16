@@ -1,0 +1,7 @@
+2025-08-12T18:46:29.403+08:00  INFO 34076 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Starting IArticleServiceImplTest using Java 17.0.12 with PID 34076 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-12T18:46:29.407+08:00  INFO 34076 --- [main] c.f.s.Impl.IArticleServiceImplTest       : The following 1 profile is active: "dev"
+2025-08-12T18:46:31.408+08:00  INFO 34076 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-12T18:46:32.021+08:00  INFO 34076 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Started IArticleServiceImplTest in 3.04 seconds (process running for 4.146)
+2025-08-12T18:46:33.362+08:00  INFO 34076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T18:46:33.501+08:00  INFO 34076 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d49a1a0
+2025-08-12T18:46:33.503+08:00  INFO 34076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

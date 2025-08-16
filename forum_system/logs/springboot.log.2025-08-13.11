@@ -1,0 +1,8 @@
+2025-08-13T22:02:09.419+08:00 ERROR 2460 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-13T22:02:22.564+08:00  INFO 2460 --- [http-nio-8080-exec-9] c.f.s.Impl.ArticleReplyServiceImpl       : 回复成功！！
+2025-08-13T22:02:28.809+08:00 ERROR 2460 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-13T22:03:19.456+08:00 ERROR 2460 --- [http-nio-8080-exec-6] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-13T22:03:24.811+08:00  INFO 2460 --- [http-nio-8080-exec-4] c.f.s.Impl.ArticleReplyServiceImpl       : 回复成功！！
+2025-08-13T22:03:36.640+08:00 ERROR 2460 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-13T22:03:49.108+08:00  INFO 2460 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-13T22:03:49.203+08:00  INFO 2460 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

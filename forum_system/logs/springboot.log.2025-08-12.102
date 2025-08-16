@@ -1,0 +1,7 @@
+2025-08-12T18:21:34.306+08:00  INFO 27884 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T18:21:34.456+08:00  INFO 27884 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ebf776c
+2025-08-12T18:21:34.459+08:00  INFO 27884 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T18:21:34.565+08:00  INFO 27884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-12T18:21:34.596+08:00  INFO 27884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-12T18:34:19.698+08:00  INFO 24212 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Starting IArticleServiceImplTest using Java 17.0.12 with PID 24212 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-12T18:34:19.701+08:00  INFO 24212 --- [main] c.f.s.Impl.IArticleServiceImplTest       : The following 1 profile is active: "dev"

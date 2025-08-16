@@ -1,0 +1,7 @@
+2025-08-15T13:45:44.756+08:00  WARN 20936 --- [main] c.f.service.Impl.MessageServiceImpl      : code=1002, message=参数校验失败
+2025-08-15T13:47:41.826+08:00  INFO 16404 --- [main] c.f.service.Impl.MessageServiceImplTest  : Starting MessageServiceImplTest using Java 17.0.12 with PID 16404 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-15T13:47:41.828+08:00  INFO 16404 --- [main] c.f.service.Impl.MessageServiceImplTest  : The following 1 profile is active: "dev"
+2025-08-15T13:47:43.751+08:00  INFO 16404 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-15T13:47:44.354+08:00  INFO 16404 --- [main] c.f.service.Impl.MessageServiceImplTest  : Started MessageServiceImplTest in 2.931 seconds (process running for 4.023)
+2025-08-15T13:47:45.501+08:00  WARN 16404 --- [main] c.f.service.Impl.MessageServiceImpl      : code=1002, message=参数校验失败
+2025-08-15T13:48:33.073+08:00  INFO 2660 --- [main] c.f.service.Impl.MessageServiceImplTest  : Starting MessageServiceImplTest using Java 17.0.12 with PID 2660 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)

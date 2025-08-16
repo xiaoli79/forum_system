@@ -1,0 +1,7 @@
+2025-08-14T14:41:10.783+08:00  INFO 30012 --- [main] c.f.service.Impl.UserServiceImplTest     : The following 1 profile is active: "dev"
+2025-08-14T14:41:12.716+08:00  INFO 30012 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-14T14:41:13.318+08:00  INFO 30012 --- [main] c.f.service.Impl.UserServiceImplTest     : Started UserServiceImplTest in 2.91 seconds (process running for 4.059)
+2025-08-14T14:41:14.435+08:00  INFO 30012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T14:41:14.609+08:00  INFO 30012 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15bb8ed5
+2025-08-14T14:41:14.614+08:00  INFO 30012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T14:41:14.673+08:00  WARN 30012 --- [main] c.f.service.Impl.UserServiceImpl         : code=1002, message=参数校验失败

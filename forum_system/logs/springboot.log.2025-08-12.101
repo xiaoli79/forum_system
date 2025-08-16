@@ -1,0 +1,6 @@
+2025-08-12T18:20:17.876+08:00  INFO 28332 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-12T18:20:17.892+08:00  INFO 28332 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-12T18:21:30.521+08:00  INFO 27884 --- [main] c.f.service.Impl.BoardServiceImplTest    : Starting BoardServiceImplTest using Java 17.0.12 with PID 27884 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-12T18:21:30.523+08:00  INFO 27884 --- [main] c.f.service.Impl.BoardServiceImplTest    : The following 1 profile is active: "dev"
+2025-08-12T18:21:32.357+08:00  INFO 27884 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-12T18:21:32.981+08:00  INFO 27884 --- [main] c.f.service.Impl.BoardServiceImplTest    : Started BoardServiceImplTest in 2.859 seconds (process running for 3.981)

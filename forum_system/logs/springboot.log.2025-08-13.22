@@ -1,0 +1,7 @@
+2025-08-13T22:07:47.555+08:00  INFO 25676 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-13T22:07:47.556+08:00  INFO 25676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-13T22:07:47.558+08:00  INFO 25676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-13T22:07:47.594+08:00  INFO 25676 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-13T22:07:47.712+08:00  INFO 25676 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f690a88
+2025-08-13T22:07:47.714+08:00  INFO 25676 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-13T22:07:48.939+08:00 ERROR 25676 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : No static resource null.

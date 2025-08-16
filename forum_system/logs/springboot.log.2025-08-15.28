@@ -1,0 +1,7 @@
+2025-08-15T14:07:30.259+08:00  INFO 22624 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-15T14:07:30.260+08:00  INFO 22624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-15T14:07:30.262+08:00  INFO 22624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-15T14:07:30.299+08:00  INFO 22624 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T14:07:30.416+08:00  INFO 22624 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c833a26
+2025-08-15T14:07:30.422+08:00  INFO 22624 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-15T14:07:34.980+08:00 ERROR 22624 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource message/send.

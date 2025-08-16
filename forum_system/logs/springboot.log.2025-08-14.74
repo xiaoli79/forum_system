@@ -1,0 +1,7 @@
+2025-08-14T18:23:30.236+08:00  WARN 19712 --- [http-nio-8080-exec-8] c.f.service.Impl.UserServiceImpl         : code=1002, message=参数校验失败
+2025-08-14T18:23:30.242+08:00 ERROR 19712 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-14T18:26:55.674+08:00  INFO 19712 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-14T18:26:55.782+08:00  INFO 19712 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-14T18:26:55.786+08:00  INFO 19712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T18:26:55.797+08:00  INFO 19712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T18:26:58.922+08:00  INFO 26344 --- [main] c.forum_system.ForumSystemApplication    : Starting ForumSystemApplication using Java 17.0.12 with PID 26344 (E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system\target\classes started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)

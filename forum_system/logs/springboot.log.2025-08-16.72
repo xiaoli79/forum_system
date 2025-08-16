@@ -1,0 +1,7 @@
+2025-08-16T16:15:32.263+08:00  INFO 11868 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-16T16:15:32.399+08:00  INFO 11868 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b532d68
+2025-08-16T16:15:32.401+08:00  INFO 11868 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-16T16:16:48.345+08:00 ERROR 11868 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : No static resource message/reply.
+2025-08-16T16:17:10.760+08:00  INFO 11868 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-16T16:17:10.834+08:00  INFO 11868 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-16T16:17:10.842+08:00  INFO 11868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...

@@ -1,0 +1,7 @@
+2025-08-16T15:11:40.598+08:00  WARN 19984 --- [http-nio-8080-exec-1] c.f.service.Impl.MessageServiceImpl      : code=1002, message=参数校验失败
+2025-08-16T15:11:40.688+08:00 ERROR 19984 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-16T15:11:46.162+08:00  WARN 19984 --- [http-nio-8080-exec-7] c.f.service.Impl.MessageServiceImpl      : code=1002, message=参数校验失败
+2025-08-16T15:11:46.164+08:00 ERROR 19984 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-16T15:12:01.724+08:00  WARN 19984 --- [http-nio-8080-exec-2] c.f.service.Impl.MessageServiceImpl      : code=1002, message=参数校验失败
+2025-08-16T15:12:01.725+08:00 ERROR 19984 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-16T15:12:04.765+08:00 ERROR 19984 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.

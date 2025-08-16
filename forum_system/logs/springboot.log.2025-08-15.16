@@ -1,0 +1,7 @@
+2025-08-15T08:33:38.816+08:00  WARN 23908 --- [http-nio-8080-exec-3] c.f.service.Impl.UserServiceImpl         : code=1002, message=参数校验失败
+2025-08-15T08:33:38.819+08:00 ERROR 23908 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : ⽤⼾名或密码错误
+2025-08-15T08:33:42.831+08:00 ERROR 23908 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-15T08:33:55.625+08:00  WARN 23908 --- [http-nio-8080-exec-9] c.f.service.Impl.UserServiceImpl         : code=1000, message=操作失败
+2025-08-15T08:33:55.627+08:00 ERROR 23908 --- [http-nio-8080-exec-9] c.f.exception.GlobalExceptionHandler     : 操作失败
+2025-08-15T08:34:17.510+08:00 ERROR 23908 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-15T08:34:17.533+08:00 ERROR 23908 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.

@@ -1,0 +1,6 @@
+2025-08-15T14:08:53.892+08:00  WARN 16496 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [120] milliseconds.
+2025-08-15T14:08:57.525+08:00 ERROR 16496 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : Method parameter 'receiveUserId': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "3L"
+2025-08-15T14:09:17.839+08:00  INFO 16496 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T14:09:17.961+08:00  INFO 16496 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T14:09:17.965+08:00  INFO 16496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T14:09:17.972+08:00  INFO 16496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

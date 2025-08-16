@@ -1,0 +1,7 @@
+2025-08-15T08:31:17.587+08:00  INFO 3824 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-15T08:31:17.589+08:00  INFO 3824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-15T08:31:17.589+08:00  INFO 3824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-15T08:31:17.625+08:00  INFO 3824 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T08:31:17.746+08:00  INFO 3824 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@249313c
+2025-08-15T08:31:17.747+08:00  INFO 3824 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-15T08:31:17.797+08:00  WARN 3824 --- [http-nio-8080-exec-1] c.f.service.Impl.UserServiceImpl         : code=1002, message=参数校验失败

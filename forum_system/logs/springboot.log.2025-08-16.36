@@ -1,0 +1,7 @@
+2025-08-16T15:10:47.689+08:00 ERROR 33152 --- [http-nio-8080-exec-6] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-16T15:10:55.995+08:00  WARN 33152 --- [http-nio-8080-exec-4] c.f.service.Impl.MessageServiceImpl      : code=1002, message=参数校验失败
+2025-08-16T15:10:55.996+08:00 ERROR 33152 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-16T15:11:00.240+08:00  WARN 33152 --- [http-nio-8080-exec-3] c.f.service.Impl.MessageServiceImpl      : code=1002, message=参数校验失败
+2025-08-16T15:11:00.242+08:00 ERROR 33152 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-16T15:11:25.829+08:00  INFO 33152 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-16T15:11:25.899+08:00  INFO 33152 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

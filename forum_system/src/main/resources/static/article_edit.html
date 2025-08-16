@@ -87,6 +87,34 @@
     // ========================== 获取帖子详情 ========================== 
     // 成功后，设置ID,版块名，标题，并初始编辑区同时设置正文initEditor(edit_article.content);
     $.ajax({
+      type:'get',
+      url: 'article/details?id='+currentArticle.id,
+      success:function (result){
+        if(result.code == 0){
+          let article = result.data;
+          // 设置帖子Id！
+          $('#edit_article_id').val(article.id)
+          // 设置板块名
+          $('#edit_article_board_name').html(article.board.name);
+          // 设置标题
+          $('#edit_article_title').val(article.title);
+          // 设置正文
+          initEditor(article.content);
+        }else{
+          $.toast({
+            heading:"成功",
+            text:"注册成功，请登录",
+            icon:"success"
+          });
+        }
+      },error:function () {
+        $.toast({
+          heading:"错误",
+          text:"访问出现问题，请联系管理员",
+          icon:'error'
+        });
+
+      }
 
     });
     
@@ -147,12 +175,44 @@
           });
           return;
       }
-
+        let getData = {
+          // 冒号前：后端数据 ： 冒号后，前端数据~~
+          id:articleIdEl.val(),
+          title:articleTitleEl.val(),
+          content:articleContentEl.val()
+        } ;
         // 构造修改对象
 
         // 发送修改请求, 成功后跳转至首页changeNavActive($('#nav_board_index'));
+        // 发送ajax请求，发送给前端
         $.ajax({
+          type:"get",
+          url:"article/modify",
+          contentType:"application/x-www-form-urlencoded",
+          data:getData,
+          success:function (result) {
+            if(result.code == 0){
+              $.toast({
+                heading:"成功",
+                text:"更新成功",
+                icon:"success"
+              });
+              changeNavActive($('#nav_board_index'));
+            }else{
+              $.toast({
+                heading:"警告",
+                text:result.message,
+                icon:"warning"
+              });
+            }
 
+          },error:function () {
+            $.toast({
+              heading:"错误",
+              text:"访问出现问题，请联系管理员",
+              icon:'error'
+            });
+          }
         });
     });
     

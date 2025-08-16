@@ -1,0 +1,8 @@
+2025-08-16T12:55:55.911+08:00 ERROR 36064 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by m.createTime desc, m.state asc' at line 17
+### The error may exist in file [E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system\target\classes\mapper\extension\MessageExtMapper.xml]
+### The error may involve com.forum_system.dao.MessageMapper.selectByReceiveUserId-Inline
+### The error occurred while setting parameters
+### SQL: select             u.id as u_id,             u.avatarUrl as u_avatarUrl,             u.nickname as u_nickname,             u.gender as u_gender,             m.id,             m.postUserId,             m.receiveUserId,             m.content,             m.state,             m.createTime,             m.updateTime         from t_message m,t_user u         where m.postUserId=u.id           and m.deleteState = 0           and m.receiveUserId=?;         order by m.createTime desc, m.state asc
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by m.createTime desc, m.state asc' at line 17
+; bad SQL grammar []

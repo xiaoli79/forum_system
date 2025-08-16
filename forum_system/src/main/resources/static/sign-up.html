@@ -165,11 +165,11 @@ $(function () {
       success:function (result){
         console.log(result.data)
         if(result.code ==0 ){
-          $.toast({
-            heading:"成功",
-            text:"注册成功，请登录",
-            icon:"success"
-          });
+          // $.toast({
+          //   heading:"成功",
+          //   text:"注册成功，请登录",
+          //   icon:"success"
+          // });
           window.location.href='sign-in.html';
         }else{
           $.toast({

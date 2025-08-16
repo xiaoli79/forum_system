@@ -1,0 +1,6 @@
+2025-08-16T15:00:32.897+08:00  INFO 3296 --- [main] c.forum_system.ForumSystemApplication    : Started ForumSystemApplication in 1.96 seconds (process running for 2.45)
+2025-08-16T15:00:38.106+08:00  INFO 3296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-16T15:00:38.106+08:00  INFO 3296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-16T15:00:38.107+08:00  INFO 3296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-16T15:00:38.174+08:00 ERROR 3296 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-16T15:00:38.285+08:00 ERROR 3296 --- [http-nio-8080-exec-5] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null

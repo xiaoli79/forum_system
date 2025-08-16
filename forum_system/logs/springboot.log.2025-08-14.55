@@ -1,0 +1,6 @@
+2025-08-14T14:41:14.715+08:00  INFO 30012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T14:41:14.727+08:00  INFO 30012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T14:41:42.377+08:00  INFO 24640 --- [main] c.f.service.Impl.UserServiceImplTest     : Starting UserServiceImplTest using Java 17.0.12 with PID 24640 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-14T14:41:42.379+08:00  INFO 24640 --- [main] c.f.service.Impl.UserServiceImplTest     : The following 1 profile is active: "dev"
+2025-08-14T14:41:44.280+08:00  INFO 24640 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-14T14:41:44.872+08:00  INFO 24640 --- [main] c.f.service.Impl.UserServiceImplTest     : Started UserServiceImplTest in 2.924 seconds (process running for 4.11)

@@ -20,4 +20,9 @@ class BoardServiceImplTest {
         System.out.println(boardServiceImpl.selectByNum(5));
 
     }
+
+    @Test
+    void subOneArticleCountById() {
+        boardServiceImpl.subOneArticleCountById(1L);
+    }
 }

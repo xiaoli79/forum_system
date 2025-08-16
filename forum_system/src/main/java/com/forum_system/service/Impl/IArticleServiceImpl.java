@@ -14,7 +14,6 @@ import io.micrometer.common.util.StringUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.Date;
 import java.util.List;
 
@@ -132,5 +131,151 @@ public class IArticleServiceImpl implements IArticleService {
 //      更新返回对象的帖子数量
         article.setVisitcount(article.getVisitcount()+1);
         return article;
+    }
+
+    @Override
+    public Article selectById(long id) {
+        if(id == 0 || id < 0){
+            log.warn(ResultCode.FAILED_PARAMS_VALIDATE.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_PARAMS_VALIDATE));
+        }
+        return articleMapper.selectByPrimaryKey(id);
+    }
+
+
+    @Override
+    public void modify(long id, String title, String content) {
+
+//        非空校验
+        if(id == 0 || id < 0 || StringUtils.isEmpty(title) || StringUtils.isEmpty(content)) {
+            log.warn(ResultCode.FAILED_PARAMS_VALIDATE.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_PARAMS_VALIDATE));
+        }
+
+        Article updateArticle = new Article();
+
+//      把参数传进去
+        updateArticle.setId(id);
+        updateArticle.setTitle(title);
+        updateArticle.setContent(content);
+        updateArticle.setUpdatetime(new Date());
+
+        int row = articleMapper.updateByPrimaryKeySelective(updateArticle);
+        if(row != 1){
+            log.warn(ResultCode.ERROR_SERVICES.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.ERROR_SERVICES));
+        }
+    }
+
+    @Override
+    public void thumpsUpById(long id) {
+
+        if(id == 0 || id < 0){
+            log.warn(ResultCode.FAILED_PARAMS_VALIDATE.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_PARAMS_VALIDATE));
+        }
+        Article article = articleMapper.selectByPrimaryKey(id);
+        if(article == null) {
+            log.warn(ResultCode.FAILED_ARTICLE_NOT_EXISTS.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_ARTICLE_NOT_EXISTS));
+        }
+        if(article.getDeletestate()  == 1|| article.getState() == 1){
+            log.warn(ResultCode.FAILED_ARTICLE_BANNED.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_ARTICLE_BANNED));
+        }
+
+        Article updateArticle = new Article();
+        updateArticle.setId(id);
+        updateArticle.setLikecount(article.getLikecount()+1);
+        updateArticle.setUpdatetime(new Date());
+
+
+        int row = articleMapper.updateByPrimaryKeySelective(updateArticle);
+        if(row != 1) {
+            log.warn(ResultCode.ERROR_SERVICES.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.ERROR_SERVICES));
+        }
+    }
+
+    @Override
+    public void deleteById(long id) {
+        if(id == 0 || id < 0){
+            log.warn(ResultCode.FAILED_PARAMS_VALIDATE.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_PARAMS_VALIDATE));
+        }
+
+
+        Article article = articleMapper.selectByPrimaryKey(id);
+        if(article == null || article.getDeletestate() == 1) {
+            log.warn(ResultCode.FAILED_ARTICLE_NOT_EXISTS.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_ARTICLE_NOT_EXISTS));
+        }
+
+        Article updateArticle = new Article();
+        updateArticle.setId(id);
+        updateArticle.setDeletestate((byte) 1);
+
+        int row = articleMapper.updateByPrimaryKeySelective(updateArticle);
+        if(row != 1) {
+            log.warn(ResultCode.ERROR_SERVICES.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.ERROR_SERVICES));
+        }
+
+        //更新板块中的发帖数量和用户发帖数量
+        boardService.subOneArticleCountById(article.getBoardid());
+        userService.subOneArticleCountById(article.getUserid());
+
+        log.info("删除帖子成功！！");
+
+    }
+
+
+    @Override
+    public void addOneReplyCountById(long id) {
+        if(id == 0 || id < 0){
+            log.warn(ResultCode.FAILED_PARAMS_VALIDATE.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_PARAMS_VALIDATE));
+        }
+        Article article = articleMapper.selectByPrimaryKey(id);
+
+//      帖子封帖子
+        if(article == null || article.getDeletestate() == 1 || article.getState() == 1 ) {
+            log.warn(ResultCode.FAILED_ARTICLE_NOT_EXISTS.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_ARTICLE_NOT_EXISTS));
+        }
+        Article updateArticle = new Article();
+//      更新帖子的数量
+        updateArticle.setId(id);
+        updateArticle.setReplycount(article.getReplycount()+1);
+        updateArticle.setUpdatetime(new Date());
+        int row = articleMapper.updateByPrimaryKeySelective(updateArticle);
+        if(row != 1) {
+            log.warn(ResultCode.ERROR_SERVICES.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.ERROR_SERVICES));
+        }
+    }
+
+    @Override
+    public List<Article> selectByUserId(Long userId) {
+
+
+        if(userId == null || userId <= 0){
+            log.warn(ResultCode.FAILED_PARAMS_VALIDATE.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_PARAMS_VALIDATE));
+        }
+
+//      来检验用户是否存在!!
+        User user = userService.selectById(userId);
+        if(user == null){
+            log.warn(ResultCode.FAILED_USER_NOT_EXISTS.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_USER_NOT_EXISTS));
+        }
+
+        List<Article> articles = articleMapper.selectByUserId(userId);
+        if(articles == null){
+            log.warn(ResultCode.FAILED_ARTICLE_NOT_EXISTS.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_ARTICLE_NOT_EXISTS));
+        }
+        return articles;
     }
 }

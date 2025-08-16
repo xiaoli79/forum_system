@@ -1,0 +1,6 @@
+2025-08-12T18:46:33.577+08:00  WARN 34076 --- [main] c.f.service.Impl.IArticleServiceImpl     : code=1301, message=帖子不存在
+2025-08-12T18:46:33.625+08:00  INFO 34076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-12T18:46:33.657+08:00  INFO 34076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-12T18:46:44.390+08:00  INFO 36684 --- [main] c.forum_system.ForumSystemApplication    : Starting ForumSystemApplication using Java 17.0.12 with PID 36684 (E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system\target\classes started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-12T18:46:44.393+08:00  INFO 36684 --- [main] c.forum_system.ForumSystemApplication    : The following 1 profile is active: "dev"
+2025-08-12T18:46:45.293+08:00  INFO 36684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)

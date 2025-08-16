@@ -1,0 +1,5 @@
+2025-08-12T13:25:51.066+08:00 ERROR 30224 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: ""
+2025-08-12T13:25:55.039+08:00 ERROR 30224 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: ""
+2025-08-12T13:25:59.422+08:00 ERROR 30224 --- [http-nio-8080-exec-9] c.f.exception.GlobalExceptionHandler     : Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: ""
+2025-08-12T13:35:52.015+08:00  INFO 30224 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T13:35:52.107+08:00  INFO 30224 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

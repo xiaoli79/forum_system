@@ -1,0 +1,8 @@
+2025-08-16T20:07:12.447+08:00  INFO 36588 --- [http-nio-8080-exec-3] c.f.service.Impl.IArticleServiceImpl     : code=0, message=成功
+2025-08-16T20:07:17.224+08:00  WARN 36588 --- [http-nio-8080-exec-3] c.f.s.Impl.ArticleReplyServiceImpl       : code=2000, message=服务器内部错误
+2025-08-16T20:07:17.231+08:00 ERROR 36588 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : 服务器内部错误
+2025-08-16T20:07:17.243+08:00 ERROR 36588 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-16T20:07:27.237+08:00  INFO 36588 --- [http-nio-8080-exec-9] c.f.s.Impl.ArticleReplyServiceImpl       : 回复成功！！
+2025-08-16T20:16:00.091+08:00  INFO 36588 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-16T20:16:00.181+08:00  INFO 36588 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-16T20:16:00.185+08:00  INFO 36588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...

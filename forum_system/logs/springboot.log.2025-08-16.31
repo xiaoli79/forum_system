@@ -1,0 +1,7 @@
+2025-08-16T15:01:46.556+08:00 ERROR 3296 --- [http-nio-8080-exec-9] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-16T15:01:51.366+08:00  WARN 3296 --- [http-nio-8080-exec-8] c.f.service.Impl.MessageServiceImpl      : code=1002, message=参数校验失败
+2025-08-16T15:01:51.367+08:00 ERROR 3296 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-16T15:01:58.959+08:00 ERROR 3296 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-16T15:02:53.455+08:00  WARN 3296 --- [http-nio-8080-exec-10] c.f.service.Impl.MessageServiceImpl      : code=1002, message=参数校验失败
+2025-08-16T15:02:53.462+08:00 ERROR 3296 --- [http-nio-8080-exec-10] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-16T15:04:16.326+08:00  WARN 3296 --- [http-nio-8080-exec-3] c.f.service.Impl.MessageServiceImpl      : code=1002, message=参数校验失败

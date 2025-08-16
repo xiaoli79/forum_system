@@ -1,0 +1,6 @@
+2025-08-14T17:59:33.477+08:00  INFO 15544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T17:59:33.520+08:00  INFO 15544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T17:59:38.968+08:00  INFO 34600 --- [main] c.forum_system.ForumSystemApplication    : Starting ForumSystemApplication using Java 17.0.12 with PID 34600 (E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system\target\classes started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-14T17:59:38.970+08:00  INFO 34600 --- [main] c.forum_system.ForumSystemApplication    : The following 1 profile is active: "dev"
+2025-08-14T17:59:39.844+08:00  INFO 34600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-14T17:59:39.853+08:00  INFO 34600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]

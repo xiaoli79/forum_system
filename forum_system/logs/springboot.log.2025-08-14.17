@@ -1,0 +1,6 @@
+2025-08-14T09:44:41.165+08:00  WARN 3924 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [138] milliseconds.
+2025-08-14T09:45:01.133+08:00 ERROR 3924 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-14T09:45:22.366+08:00 ERROR 3924 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-14T09:45:32.325+08:00 ERROR 3924 --- [http-nio-8080-exec-5] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-14T09:45:36.275+08:00 ERROR 3924 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-14T09:46:00.913+08:00 ERROR 3924 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.

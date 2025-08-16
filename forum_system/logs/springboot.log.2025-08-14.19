@@ -1,0 +1,6 @@
+2025-08-14T09:49:32.955+08:00 ERROR 3924 --- [http-nio-8080-exec-6] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-14T09:50:43.049+08:00  INFO 3924 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-14T09:50:43.146+08:00  INFO 3924 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-14T09:50:43.148+08:00  INFO 3924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T09:50:43.153+08:00  INFO 3924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T09:50:46.036+08:00  INFO 16444 --- [main] c.forum_system.ForumSystemApplication    : Starting ForumSystemApplication using Java 17.0.12 with PID 16444 (E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system\target\classes started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)

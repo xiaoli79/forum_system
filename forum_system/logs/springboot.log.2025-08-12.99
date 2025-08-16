@@ -1,0 +1,7 @@
+2025-08-12T18:16:21.876+08:00  INFO 29816 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-12T18:16:22.526+08:00  INFO 29816 --- [main] c.f.service.Impl.BoardServiceImplTest    : Started BoardServiceImplTest in 2.955 seconds (process running for 4.093)
+2025-08-12T18:16:23.968+08:00  INFO 29816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T18:16:24.103+08:00  INFO 29816 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f08f8a9
+2025-08-12T18:16:24.107+08:00  INFO 29816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T18:16:24.231+08:00  INFO 29816 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-12T18:16:24.264+08:00  INFO 29816 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

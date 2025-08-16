@@ -1,0 +1,8 @@
+2025-08-16T13:31:20.136+08:00 ERROR 28248 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : 站内信不存在
+2025-08-16T13:31:25.244+08:00  WARN 28248 --- [http-nio-8080-exec-5] c.f.controller.MessageController         : code=1003, message=禁⽌访问
+2025-08-16T13:31:25.245+08:00 ERROR 28248 --- [http-nio-8080-exec-5] c.f.exception.GlobalExceptionHandler     : 禁⽌访问
+2025-08-16T13:32:04.717+08:00  WARN 28248 --- [http-nio-8080-exec-8] c.f.controller.MessageController         : code=1003, message=禁⽌访问
+2025-08-16T13:32:04.719+08:00 ERROR 28248 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : 禁⽌访问
+2025-08-16T13:32:27.618+08:00  INFO 28248 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-16T13:32:27.702+08:00  INFO 28248 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-16T13:32:27.705+08:00  INFO 28248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...

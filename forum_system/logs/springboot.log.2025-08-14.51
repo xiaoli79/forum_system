@@ -1,0 +1,7 @@
+2025-08-14T14:33:06.846+08:00  INFO 15532 --- [main] c.f.service.Impl.UserServiceImplTest     : Starting UserServiceImplTest using Java 17.0.12 with PID 15532 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-14T14:33:06.851+08:00  INFO 15532 --- [main] c.f.service.Impl.UserServiceImplTest     : The following 1 profile is active: "dev"
+2025-08-14T14:33:08.786+08:00  INFO 15532 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-14T14:33:09.420+08:00  INFO 15532 --- [main] c.f.service.Impl.UserServiceImplTest     : Started UserServiceImplTest in 2.957 seconds (process running for 4.011)
+2025-08-14T14:33:10.644+08:00  INFO 15532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T14:33:10.794+08:00  INFO 15532 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bc14211
+2025-08-14T14:33:10.797+08:00  INFO 15532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

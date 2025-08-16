@@ -1,0 +1,7 @@
+2025-08-15T13:48:33.075+08:00  INFO 2660 --- [main] c.f.service.Impl.MessageServiceImplTest  : The following 1 profile is active: "dev"
+2025-08-15T13:48:34.983+08:00  INFO 2660 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-15T13:48:35.582+08:00  INFO 2660 --- [main] c.f.service.Impl.MessageServiceImplTest  : Started MessageServiceImplTest in 2.901 seconds (process running for 3.95)
+2025-08-15T13:48:36.785+08:00  INFO 2660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T13:48:36.943+08:00  INFO 2660 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d8087da
+2025-08-15T13:48:36.946+08:00  INFO 2660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-15T13:48:37.088+08:00  INFO 2660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...

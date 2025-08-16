@@ -1,0 +1,7 @@
+2025-08-13T22:10:15.529+08:00  INFO 12860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-13T22:10:15.543+08:00  INFO 12860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-13T22:10:15.543+08:00  INFO 12860 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-13T22:10:15.583+08:00  INFO 12860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-13T22:10:15.583+08:00  INFO 12860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 946 ms
+2025-08-13T22:10:15.957+08:00  INFO 12860 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-13T22:10:16.264+08:00  INFO 12860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'

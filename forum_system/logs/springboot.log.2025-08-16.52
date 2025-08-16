@@ -1,0 +1,6 @@
+2025-08-16T15:19:25.460+08:00  WARN 20204 --- [http-nio-8080-exec-2] c.f.controller.MessageController         : code=1104, message=您已被禁⾔, 请联系管理员, 并重新登录.
+2025-08-16T15:19:25.460+08:00 ERROR 20204 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
+2025-08-16T15:19:25.460+08:00  WARN 20204 --- [http-nio-8080-exec-7] c.f.controller.MessageController         : code=1104, message=您已被禁⾔, 请联系管理员, 并重新登录.
+2025-08-16T15:19:25.464+08:00 ERROR 20204 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : 您已被禁⾔, 请联系管理员, 并重新登录.
+2025-08-16T15:19:25.465+08:00 ERROR 20204 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : 您已被禁⾔, 请联系管理员, 并重新登录.
+2025-08-16T15:20:11.271+08:00  INFO 20204 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete

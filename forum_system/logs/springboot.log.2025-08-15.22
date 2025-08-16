@@ -1,0 +1,6 @@
+2025-08-15T13:27:31.843+08:00  INFO 10084 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T13:27:31.854+08:00  INFO 10084 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-15T13:45:40.814+08:00  INFO 20936 --- [main] c.f.service.Impl.MessageServiceImplTest  : Starting MessageServiceImplTest using Java 17.0.12 with PID 20936 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-15T13:45:40.815+08:00  INFO 20936 --- [main] c.f.service.Impl.MessageServiceImplTest  : The following 1 profile is active: "dev"
+2025-08-15T13:45:42.895+08:00  INFO 20936 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-15T13:45:43.548+08:00  INFO 20936 --- [main] c.f.service.Impl.MessageServiceImplTest  : Started MessageServiceImplTest in 3.174 seconds (process running for 4.371)

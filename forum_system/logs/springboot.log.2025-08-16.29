@@ -1,0 +1,6 @@
+2025-08-16T15:00:38.306+08:00  INFO 3296 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-16T15:00:38.374+08:00  WARN 3296 --- [http-nio-8080-exec-1] c.f.controller.MessageController         : code=1104, message=您已被禁⾔, 请联系管理员, 并重新登录.
+2025-08-16T15:00:38.374+08:00  WARN 3296 --- [http-nio-8080-exec-3] c.f.controller.MessageController         : code=1104, message=您已被禁⾔, 请联系管理员, 并重新登录.
+2025-08-16T15:00:38.376+08:00 ERROR 3296 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : 您已被禁⾔, 请联系管理员, 并重新登录.
+2025-08-16T15:00:38.376+08:00 ERROR 3296 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : 您已被禁⾔, 请联系管理员, 并重新登录.
+2025-08-16T15:00:38.463+08:00  INFO 3296 --- [http-nio-8080-exec-9] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e4f54ca

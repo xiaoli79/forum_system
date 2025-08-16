@@ -1,0 +1,7 @@
+2025-08-16T15:14:43.355+08:00 ERROR 15592 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-16T15:14:48.982+08:00  WARN 15592 --- [http-nio-8080-exec-2] c.f.service.Impl.MessageServiceImpl      : code=1002, message=参数校验失败
+2025-08-16T15:14:48.983+08:00 ERROR 15592 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-16T15:16:51.771+08:00  INFO 15592 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-16T15:16:51.846+08:00  INFO 15592 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-16T15:16:51.851+08:00  INFO 15592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-16T15:16:51.872+08:00  INFO 15592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

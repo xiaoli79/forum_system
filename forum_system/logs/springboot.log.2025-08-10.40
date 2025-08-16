@@ -1,0 +1,7 @@
+2025-08-10T16:33:23.709+08:00  INFO 29348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-10T16:33:23.712+08:00  INFO 29348 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-10T16:33:23.770+08:00  INFO 29348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-10T16:33:23.770+08:00  INFO 29348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1023 ms
+2025-08-10T16:33:24.216+08:00  INFO 29348 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-10T16:33:24.582+08:00  INFO 29348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-10T16:33:24.591+08:00  INFO 29348 --- [main] c.forum_system.ForumSystemApplication    : Started ForumSystemApplication in 2.403 seconds (process running for 3.005)

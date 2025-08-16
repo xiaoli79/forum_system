@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.forum_system.dao.MessageMapper">
+    <resultMap id="AllInfoResultMap" type="com.forum_system.model.Message" extends="BaseResultMap">
+
+        <association property="postUser" resultMap="com.forum_system.dao.UserMapper.BaseResultMap"
+         columnPrefix="u_"></association>
+    </resultMap>
+
+
+    <select id="selectUnReadCount" parameterType="java.lang.Long" resultType="java.lang.Integer">
+        select count(*) from t_message
+        where state = 0
+        and deleteState = 0
+        and receiveUserId = #{receiveUserId,jdbcType=BIGINT};
+    </select>
+
+
+    <select id="selectByReceiveUserId" parameterType="java.lang.Long" resultMap="AllInfoResultMap">
+        select
+            u.id as u_id,
+            u.avatarUrl as u_avatarUrl,
+            u.nickname as u_nickname,
+            u.gender as u_gender,
+            m.id,
+            m.postUserId,
+            m.receiveUserId,
+            m.content,
+            m.state,
+            m.createTime,
+            m.updateTime
+        from t_message m,t_user u
+        where m.postUserId=u.id
+          and m.deleteState = 0
+          and m.receiveUserId=#{receiveUserId,jdbcType=BIGINT}
+        order by m.createTime desc, m.state asc
+    </select>
+
+
+
+
+
+
+</mapper>

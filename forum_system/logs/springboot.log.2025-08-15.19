@@ -1,0 +1,7 @@
+2025-08-15T08:36:18.202+08:00  INFO 10084 --- [main] c.forum_system.ForumSystemApplication    : Started ForumSystemApplication in 2.053 seconds (process running for 2.546)
+2025-08-15T08:36:35.608+08:00  INFO 10084 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-15T08:36:35.609+08:00  INFO 10084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-15T08:36:35.610+08:00  INFO 10084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-15T08:36:35.668+08:00  INFO 10084 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T08:36:35.845+08:00  INFO 10084 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a40b2a7
+2025-08-15T08:36:35.847+08:00  INFO 10084 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

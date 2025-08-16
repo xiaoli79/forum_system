@@ -27,4 +27,23 @@ class UserServiceImplTest {
     void addOneArticleCountById() {
         userServiceImpl.addOneArticleCountById(1L);
     }
+
+    @Test
+    void modifyUser() {
+        User user = new User();
+        user.setId(7L);
+        user.setGender((byte) 1);
+        user.setNickname("xiaoli");
+        user.setEmail("3099592185@qq.com");
+        user.setPhonenum("17337191448");
+        user.setRemark("我是你爸爸");
+        userServiceImpl.modifyUser(user);
+
+
+    }
+
+    @Test
+    void modifyPassword() {
+        userServiceImpl.modifyPassword(7L,"123456","222");
+    }
 }

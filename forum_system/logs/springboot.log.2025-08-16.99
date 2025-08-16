@@ -1,0 +1,6 @@
+2025-08-16T16:56:45.977+08:00 ERROR 8932 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-16T16:56:57.800+08:00 ERROR 8932 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-16T16:58:17.001+08:00 ERROR 8932 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : Required request parameter 'repliedId' for method parameter type Long is not present
+2025-08-16T17:00:55.883+08:00  INFO 8932 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-16T17:00:55.969+08:00  INFO 8932 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-16T17:00:55.973+08:00  INFO 8932 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...

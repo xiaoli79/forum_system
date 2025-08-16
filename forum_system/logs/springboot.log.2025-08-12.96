@@ -1,0 +1,6 @@
+2025-08-12T15:43:05.747+08:00 ERROR 23988 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-12T15:57:51.949+08:00  WARN 23988 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m34s674ms168µs400ns).
+2025-08-12T17:50:37.270+08:00  WARN 23988 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h48m15s252ms225µs500ns).
+2025-08-12T17:52:13.886+08:00 ERROR 23988 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-12T17:52:19.821+08:00 ERROR 23988 --- [http-nio-8080-exec-9] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-12T17:55:23.419+08:00  INFO 23988 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete

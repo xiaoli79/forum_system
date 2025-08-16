@@ -68,13 +68,115 @@ public class ArticleController {
 
 
     @RequestMapping("/details")
-    public AppResult<Article> details(@NonNull @RequestParam("id") long id) {
+    public AppResult<Article> details(HttpServletRequest request , @NonNull @RequestParam("id") long id) {
+
+//      从session中拿取user对象
+        HttpSession session = request.getSession(false);
+        User user = (User) session.getAttribute(AppConfig.USER_SESSION);
 
         Article article = articleService.selectDetailById(id);
         if(article == null){
             log.warn(ResultCode.FAILED_ARTICLE_NOT_EXISTS.toString());
             return AppResult.failed(ResultCode.FAILED_ARTICLE_NOT_EXISTS);
         }
+        if(user.getId() == article.getUserid()){
+            article.setOwn(true);
+        }
         return AppResult.success(article);
     }
+
+
+
+
+
+    @RequestMapping("/modify")
+    public AppResult modify(HttpServletRequest request,
+                            @NonNull @RequestParam("id") long id ,
+                            @NonNull @RequestParam("title")  String title ,
+                            @NonNull @RequestParam("content") String content ){
+
+
+        HttpSession session = request.getSession(false);
+        User user = (User) session.getAttribute(AppConfig.USER_SESSION);
+        if(user.getState() == 1){
+            log.warn(ResultCode.FAILED_USER_BANNED.toString());
+            return AppResult.failed(ResultCode.FAILED_USER_BANNED);
+        }
+        Article article = articleService.selectById(id);
+        if(article == null){
+            log.warn(ResultCode.FAILED_ARTICLE_NOT_EXISTS.toString());
+            return AppResult.failed(ResultCode.FAILED_ARTICLE_NOT_EXISTS);
+        }
+        if(user.getId() != article.getUserid()){
+            return AppResult.failed(ResultCode.FAILED_USER_BANNED);
+        }
+        if(article.getState() == 1 || article.getDeletestate() == 1){
+            return AppResult.failed(ResultCode.FAILED_ARTICLE_BANNED);
+        }
+        articleService.modify(id,title,content);
+        return AppResult.success();
+    }
+
+
+
+    @RequestMapping("/thumbsup")
+    public AppResult thumbsup (HttpServletRequest request, long id){
+//      校验用户状态
+        HttpSession session = request.getSession(false);
+        User user = (User) session.getAttribute(AppConfig.USER_SESSION);
+//       判断用户是否禁言
+        if(user.getState() == 1){
+            return AppResult.failed(ResultCode.FAILED_USER_BANNED);
+        }
+//        调用service
+        articleService.thumpsUpById(id);
+//        返回结果！
+        return AppResult.success();
+
+    }
+
+
+    @RequestMapping("/delete")
+    public AppResult deleteById(HttpServletRequest request,@NonNull long id){
+
+//        校验用户状态
+        HttpSession session = request.getSession(false);
+        User user = (User) session.getAttribute(AppConfig.USER_SESSION);
+//        判断用户是否被禁言
+        if(user.getState() == 1){
+            return AppResult.failed(ResultCode.FAILED_USER_BANNED);
+        }
+//      再次检验其状态
+        Article article = articleService.selectById(id);
+        if(article == null || article.getDeletestate() == 1){
+            log.warn(ResultCode.FAILED_ARTICLE_NOT_EXISTS.toString());
+            return AppResult.failed(ResultCode.FAILED_ARTICLE_NOT_EXISTS);
+        }
+
+//      调用业务代码
+        articleService.deleteById(id);
+        return AppResult.success();
+
+    }
+
+
+
+    @RequestMapping("/getAllByUserId")
+//  userId 可为空!!
+    public AppResult<List<Article>> getALLByUserId(HttpServletRequest request,
+                                    @RequestParam(value = "userId",required = false) Long userId){
+        if(userId == null){
+            HttpSession session = request.getSession(false);
+            User user = (User) session.getAttribute(AppConfig.USER_SESSION);
+            userId = user.getId();
+        }
+        List<Article> articles = articleService.selectByUserId(userId);
+        return AppResult.success(articles);
+
+    }
+
+
+
+
+
 }

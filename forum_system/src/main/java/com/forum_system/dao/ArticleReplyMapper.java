@@ -3,6 +3,8 @@ package com.forum_system.dao;
 import com.forum_system.model.ArticleReply;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
 
 @Mapper
 public interface ArticleReplyMapper {
@@ -17,4 +19,6 @@ public interface ArticleReplyMapper {
     int updateByPrimaryKeySelective(ArticleReply row);
 
     int updateByPrimaryKey(ArticleReply row);
+
+    List<ArticleReply> selectByArticleId(Long articleId);
 }

@@ -1,0 +1,6 @@
+2025-08-14T18:28:33.838+08:00 ERROR 29368 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-14T18:28:33.954+08:00 ERROR 29368 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
+2025-08-14T18:28:33.977+08:00  INFO 29368 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T18:28:34.113+08:00  INFO 29368 --- [http-nio-8080-exec-10] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3dd80045
+2025-08-14T18:28:34.114+08:00  INFO 29368 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T18:28:35.589+08:00 ERROR 29368 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.

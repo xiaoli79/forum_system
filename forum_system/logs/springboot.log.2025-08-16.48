@@ -1,0 +1,7 @@
+2025-08-16T15:17:02.428+08:00  INFO 36672 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-16T15:17:02.549+08:00  INFO 36672 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@583163a7
+2025-08-16T15:17:02.550+08:00  INFO 36672 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-16T15:17:18.525+08:00  WARN 36672 --- [http-nio-8080-exec-3] c.f.service.Impl.UserServiceImpl         : code=1002, message=参数校验失败
+2025-08-16T15:17:18.530+08:00 ERROR 36672 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : ⽤⼾名或密码错误
+2025-08-16T15:17:20.257+08:00  WARN 36672 --- [http-nio-8080-exec-4] c.f.service.Impl.UserServiceImpl         : code=1002, message=参数校验失败
+2025-08-16T15:17:20.258+08:00 ERROR 36672 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : ⽤⼾名或密码错误

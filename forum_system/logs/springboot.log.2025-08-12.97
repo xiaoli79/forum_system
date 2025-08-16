@@ -1,0 +1,7 @@
+2025-08-12T17:55:23.598+08:00  INFO 23988 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T17:55:23.604+08:00  INFO 23988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-12T17:55:23.609+08:00  INFO 23988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-12T18:15:21.599+08:00  INFO 10920 --- [main] c.f.service.Impl.BoardServiceImplTest    : Starting BoardServiceImplTest using Java 17.0.12 with PID 10920 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-12T18:15:21.602+08:00  INFO 10920 --- [main] c.f.service.Impl.BoardServiceImplTest    : The following 1 profile is active: "dev"
+2025-08-12T18:15:23.653+08:00  INFO 10920 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-12T18:15:24.289+08:00  INFO 10920 --- [main] c.f.service.Impl.BoardServiceImplTest    : Started BoardServiceImplTest in 3.112 seconds (process running for 4.263)

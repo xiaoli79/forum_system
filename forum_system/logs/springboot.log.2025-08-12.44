@@ -1,0 +1,8 @@
+2025-08-12T12:24:01.593+08:00  WARN 27824 --- [http-nio-8080-exec-3] c.f.service.Impl.IArticleServiceImpl     : code=1301, message=帖子不存在
+2025-08-12T12:24:01.600+08:00 ERROR 27824 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : 帖子不存在
+2025-08-12T12:29:47.815+08:00 ERROR 27824 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-12T12:29:54.246+08:00 ERROR 27824 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : No static resource avatar.png.
+2025-08-12T12:29:58.691+08:00 ERROR 27824 --- [http-nio-8080-exec-5] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-12T12:30:05.933+08:00 ERROR 27824 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-12T12:30:19.159+08:00 ERROR 27824 --- [http-nio-8080-exec-6] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-12T12:37:02.494+08:00  INFO 27824 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete

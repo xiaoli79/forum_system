@@ -1,0 +1,6 @@
+2025-08-14T09:51:15.586+08:00  INFO 16444 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-14T09:51:15.796+08:00  INFO 16444 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-14T09:51:15.801+08:00  INFO 16444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T09:51:15.812+08:00  INFO 16444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T10:09:16.057+08:00  INFO 31196 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Starting IArticleServiceImplTest using Java 17.0.12 with PID 31196 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-14T10:09:16.060+08:00  INFO 31196 --- [main] c.f.s.Impl.IArticleServiceImplTest       : The following 1 profile is active: "dev"

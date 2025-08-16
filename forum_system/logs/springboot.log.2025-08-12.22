@@ -1,0 +1,7 @@
+2025-08-12T08:56:02.931+08:00  INFO 2216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-12T08:56:02.962+08:00 ERROR 2216 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-12T08:56:03.019+08:00 ERROR 2216 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-12T08:56:05.737+08:00  INFO 2216 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T08:56:05.844+08:00  INFO 2216 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a3d6cfd
+2025-08-12T08:56:05.845+08:00  INFO 2216 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T08:56:06.032+08:00 ERROR 2216 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.

@@ -1,0 +1,8 @@
+2025-08-14T18:08:03.314+08:00  INFO 8940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-14T18:08:03.327+08:00  INFO 8940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T18:08:03.327+08:00  INFO 8940 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-14T18:08:03.375+08:00  INFO 8940 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-14T18:08:03.375+08:00  INFO 8940 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 925 ms
+2025-08-14T18:08:03.756+08:00  INFO 8940 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-14T18:08:04.042+08:00  INFO 8940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-14T18:08:04.050+08:00  INFO 8940 --- [main] c.forum_system.ForumSystemApplication    : Started ForumSystemApplication in 2.165 seconds (process running for 2.681)

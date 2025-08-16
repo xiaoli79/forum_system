@@ -1,0 +1,6 @@
+2025-08-14T18:02:38.917+08:00 ERROR 7792 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
+2025-08-14T18:02:38.941+08:00  INFO 7792 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T18:02:39.082+08:00  INFO 7792 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2364aaf4
+2025-08-14T18:02:39.083+08:00  INFO 7792 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T18:02:49.886+08:00 ERROR 7792 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-14T18:02:54.304+08:00 ERROR 7792 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.

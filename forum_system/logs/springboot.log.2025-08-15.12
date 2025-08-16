@@ -1,0 +1,6 @@
+2025-08-15T08:31:17.799+08:00 ERROR 3824 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : ⽤⼾名或密码错误
+2025-08-15T08:32:34.309+08:00  INFO 3824 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T08:32:34.377+08:00  INFO 3824 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T08:32:34.380+08:00  INFO 3824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T08:32:34.385+08:00  INFO 3824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-15T08:32:37.322+08:00  INFO 23908 --- [main] c.forum_system.ForumSystemApplication    : Starting ForumSystemApplication using Java 17.0.12 with PID 23908 (E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system\target\classes started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)

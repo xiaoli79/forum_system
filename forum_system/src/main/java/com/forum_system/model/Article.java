@@ -37,6 +37,9 @@ public class Article {
 
     private Board  board;
 
+//  是否是作者
+    private Boolean own;
+
     public User getUser() {
         return user;
     }

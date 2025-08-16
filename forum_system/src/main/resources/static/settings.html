@@ -193,6 +193,29 @@
     // ================= 获取用户详情，初始化页面内容 =================
     // 发送AJAX请求，成功时 调用initUserInfo方法，完成页面数据初始化
     $.ajax({
+      type:"get",
+      url:"user/info",
+      success:function (result){
+        if(result.code == 0){
+          initUserInfo(result.data);
+        }else{
+          $.toast({
+            heading:"警告",
+            text:result.message,
+            icon:"warning"
+          });
+        }
+      },error:function () {
+        $.toast({
+          heading:"错误",
+          text:"访问出现问题，请联系管理员",
+          icon:'error'
+        });
+
+      }
+
+
+
       
     });
   });
@@ -214,7 +237,7 @@
     // 邮箱
     $('#setting_input_email').val(user.email);
     // 电话
-    $('#setting_input_phoneNum').val(user.phoneNum);
+    $('#setting_input_phoneNum').val(user.phonenum);
     // 个人简历
     $('#settings_textarea_remark').html(user.remark);
   }
@@ -246,7 +269,47 @@
 
     // 发送请求，提示响应结果
     $.ajax({
-      
+      type:"get",
+      url: userURL,
+      contentType:"application/x-www-form-urlencoded",
+      data:userInfo,
+      success:function (result){
+        if(result.code == 0){
+          let user = result.data;
+          console.log("弱鸡");
+          console.log(user.nickname)
+          if(user && user.nickname){
+            console.log("无敌了")
+            console.log(user.nickname)
+            $("#settings_nickname").html(user.nickname);
+            $("#index_nav_nickname").html(user.nickname);
+          }
+          console.log(type);
+          if(type == 2){
+            window.location.href = "sign-in.html"
+            return;
+          }
+          $.toast({
+            heading:"成功",
+            text:"成功",
+            icon:"success"
+
+          });
+        }else{
+          $.toast({
+            heading:"警告",
+            text:result.message,
+            icon:"warning"
+          });
+        }
+
+      },error:function () {
+        $.toast({
+          heading:"错误",
+          text:"访问出现问题，请联系管理员",
+          icon:'error'
+        });
+      }
     });
 
   }

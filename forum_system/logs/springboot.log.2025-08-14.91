@@ -1,0 +1,6 @@
+2025-08-14T18:45:36.684+08:00 ERROR 27700 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-14T18:45:36.737+08:00 ERROR 27700 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-14T18:45:39.095+08:00  INFO 27700 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T18:45:39.226+08:00  INFO 27700 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c08d482
+2025-08-14T18:45:39.228+08:00  INFO 27700 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T18:48:18.619+08:00 ERROR 27700 --- [http-nio-8080-exec-10] c.f.exception.GlobalExceptionHandler     : No static resource %E8%AE%BA%E5%9D%9B%E7%B3%BB%E7%BB%9F/%E8%AE%BA%E5%9D%9B%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81.

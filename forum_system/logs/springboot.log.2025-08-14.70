@@ -1,0 +1,6 @@
+2025-08-14T18:10:14.497+08:00 ERROR 8940 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-14T18:10:33.647+08:00  INFO 8940 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-14T18:10:33.827+08:00  INFO 8940 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-14T18:10:33.833+08:00  INFO 8940 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T18:10:33.848+08:00  INFO 8940 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T18:22:49.346+08:00  INFO 19712 --- [main] c.forum_system.ForumSystemApplication    : Starting ForumSystemApplication using Java 17.0.12 with PID 19712 (E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system\target\classes started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)

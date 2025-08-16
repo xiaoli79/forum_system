@@ -24,6 +24,10 @@ public class Message {
 
     private Date updatetime;
 
+
+//  表关联的对象！！
+    private User postUser;
+
     public Long getId() {
         return id;
     }

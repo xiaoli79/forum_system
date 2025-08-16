@@ -103,7 +103,26 @@
     // ============= 获取用户信息 =============
     // 成功时调用initProfileUserInfo()方法，初始化用户数据
     $.ajax({
-      
+      type:"get",
+      url:"user/info"+userInfoQueryString,
+      success:function (result) {
+        if(result.code == 0){
+          initProfileUserInfo(result.data);
+        }else{
+          $.toast({
+            heading:"警告",
+            text:result.message,
+            icon:"warning"
+          });
+        }
+
+      },error:function (){
+        $.toast({
+          heading: "错误",
+          text: "访问出现问题，请联系管理员",
+          icon: 'error'
+        });
+      }
     });
 
     // ============= 设置Profile页面用户信息 ================
@@ -130,13 +149,13 @@
       // 用户昵称
       $('#profile_nickname').html(user.nickname);
       // 发贴数
-      $('#profile_articleCount').html(user.articleCount);
+      $('#profile_articleCount').html(user.articlecount);
       // 邮箱
       if (user.email) {
         $('#profile_email').html(user.email);
       }
       // 注册日期
-      $('#profile_createTime').html(user.createTime);
+      $('#profile_createTime').html(user.createtime);
       // 个人介绍
       if (user.remark) {
         $('#profile_remark').html(user.remark);
@@ -153,6 +172,26 @@
     // 成功后，调用buildProfileUserArticle()方法，构造帖子列表
 
     $.ajax({
+      type:"get",
+      url:"article/getAllByUserId",
+      success:function (result) {
+        if(result.code == 0){
+          buildProfileUserArticle(result.data);
+        }else{
+          $.toast({
+            heading:"警告",
+            text:result.message,
+            icon:"warning"
+          });
+        }
+
+      },error:function (){
+        $.toast({
+          heading: "错误",
+          text: "访问出现问题，请联系管理员",
+          icon: 'error'
+        });
+      }
       
     });
 
@@ -199,7 +238,7 @@
         + ' <path d="M12 7v5l2 2"></path>'
         + ' <path d="M18.42 15.61a2.1 2.1 0 0 1 2.97 2.97l-3.39 3.42h-3v-3l3.42 -3.39z"></path>'
         + ' </svg> '
-        + article.createTime
+        + article.createtime
         + ' </li>'
         + ' </ul>'
         + ' </div>'
@@ -215,7 +254,7 @@
         + ' d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7">'
         + ' </path>'
         + ' </svg> '
-        + article.visitCount
+        + article.visitcount
         + ' </li>'
         + ' <li class="list-inline-item">'
         + ' <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart"'
@@ -226,7 +265,7 @@
         + ' d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572">'
         + ' </path>'
         + ' </svg> '
-        + article.likeCount
+        + article.likecount
         + ' </li>'
         + ' <li class="list-inline-item">'
         + ' <svg xmlns="http://www.w3.org/2000/svg"'
@@ -239,7 +278,7 @@
         + ' <path d="M8 12l0 .01"></path>'
         + ' <path d="M16 12l0 .01"></path>'
         + ' </svg> '
-        + article.replyCount
+        + article.replycount
         + ' </li>'
         + ' </ul>'
         + ' </div>'

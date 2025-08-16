@@ -1,0 +1,7 @@
+2025-08-16T16:55:57.318+08:00 ERROR 8932 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-16T16:56:03.472+08:00 ERROR 8932 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-16T16:56:03.502+08:00 ERROR 8932 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-16T16:56:06.739+08:00  WARN 8932 --- [http-nio-8080-exec-10] c.f.service.Impl.UserServiceImpl         : code=1002, message=参数校验失败
+2025-08-16T16:56:06.741+08:00 ERROR 8932 --- [http-nio-8080-exec-10] c.f.exception.GlobalExceptionHandler     : ⽤⼾名或密码错误
+2025-08-16T16:56:20.935+08:00 ERROR 8932 --- [http-nio-8080-exec-9] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-16T16:56:45.968+08:00 ERROR 8932 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.

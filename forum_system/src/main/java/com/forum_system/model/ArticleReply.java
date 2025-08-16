@@ -1,16 +1,21 @@
 package com.forum_system.model;
 
 import lombok.Data;
+import org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover;
 
 import java.util.Date;
 
 
 @Data
 public class ArticleReply {
+
+//  编号
     private Long id;
 
+//  帖子Id,关联Article
     private Long articleid;
 
+//  回复的用户编号！！
     private Long postuserid;
 
     private Long replyid;
@@ -28,6 +33,9 @@ public class ArticleReply {
     private Date createtime;
 
     private Date updatetime;
+
+
+    private User user;
 
     public Long getId() {
         return id;

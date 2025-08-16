@@ -1,0 +1,7 @@
+2025-08-12T13:37:36.063+08:00  INFO 2232 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-12T13:37:36.108+08:00  INFO 2232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T13:37:36.109+08:00  INFO 2232 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 901 ms
+2025-08-12T13:37:36.457+08:00  INFO 2232 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-12T13:37:36.726+08:00  INFO 2232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-12T13:37:36.733+08:00  INFO 2232 --- [main] c.forum_system.ForumSystemApplication    : Started ForumSystemApplication in 1.98 seconds (process running for 2.492)
+2025-08-12T13:37:40.183+08:00  INFO 2232 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete

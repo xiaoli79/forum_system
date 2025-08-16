@@ -1,0 +1,6 @@
+2025-08-15T14:08:12.171+08:00 ERROR 22624 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : No static resource message/send.
+2025-08-15T14:08:41.295+08:00  INFO 22624 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T14:08:41.360+08:00  INFO 22624 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T14:08:41.364+08:00  INFO 22624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T14:08:41.368+08:00  INFO 22624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-15T14:08:45.014+08:00  INFO 16496 --- [main] c.forum_system.ForumSystemApplication    : Starting ForumSystemApplication using Java 17.0.12 with PID 16496 (E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system\target\classes started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)

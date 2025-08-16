@@ -40,4 +40,24 @@ class IArticleServiceImplTest {
     void selectDetailById() {
         System.out.println(iArticleService.selectDetailById(100L));
     }
+
+    @Test
+    void thumpsUpById() {
+       iArticleService.thumpsUpById(3L);
+    }
+
+    @Test
+    void deleteById() {
+        iArticleService.deleteById(7L);
+    }
+
+    @Test
+    void addOneReplyCountById() {
+        iArticleService.addOneReplyCountById(1L);
+    }
+
+    @Test
+    void selectByUserId() {
+        System.out.println(iArticleService.selectByUserId(1L));
+    }
 }

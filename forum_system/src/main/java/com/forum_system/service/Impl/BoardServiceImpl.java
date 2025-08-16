@@ -60,4 +60,32 @@ public class BoardServiceImpl implements IBoardService {
         boardMapper.updateByPrimaryKeySelective(updateBoard);
 
     }
+
+
+    @Override
+    public void subOneArticleCountById(Long id) {
+
+        //校验ID是否输入正确
+        if(id == 0 || id <0){
+            log.warn(ResultCode.FAILED_BOARD_ARTICLE_COUNT.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.FAILED_BOARD_ARTICLE_COUNT));
+        }
+
+        //调用数据库
+        Board board = boardMapper.selectByPrimaryKey(id);
+        if(board == null){
+            log.warn(ResultCode.ERROR_IS_NULL.toString());
+            throw new ApplicationException(AppResult.failed(ResultCode.ERROR_IS_NULL));
+        }
+//      更新板块中的帖子数量
+        Board updateBoard = new Board();
+        updateBoard.setId(id);
+        updateBoard.setArticlecount(board.getArticlecount() - 1);
+//      如果<0,需要设置成0 !!
+        if(updateBoard.getArticlecount() < 0){
+            updateBoard.setArticlecount(0);
+        }
+        boardMapper.updateByPrimaryKeySelective(updateBoard);
+
+    }
 }

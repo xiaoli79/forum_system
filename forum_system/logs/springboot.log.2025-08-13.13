@@ -1,0 +1,7 @@
+2025-08-13T22:04:10.967+08:00  INFO 21652 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-13T22:04:11.015+08:00  INFO 21652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-13T22:04:11.015+08:00  INFO 21652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 893 ms
+2025-08-13T22:04:11.407+08:00  INFO 21652 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-13T22:04:11.707+08:00  INFO 21652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-13T22:04:11.741+08:00  INFO 21652 --- [main] c.forum_system.ForumSystemApplication    : Started ForumSystemApplication in 2.155 seconds (process running for 2.743)
+2025-08-13T22:04:15.328+08:00  INFO 21652 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'

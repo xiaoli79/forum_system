@@ -1,0 +1,7 @@
+2025-08-14T09:46:03.180+08:00 ERROR 3924 --- [http-nio-8080-exec-9] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-14T09:46:26.804+08:00 ERROR 3924 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-14T09:46:29.150+08:00 ERROR 3924 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-14T09:46:33.851+08:00 ERROR 3924 --- [http-nio-8080-exec-9] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-14T09:49:21.034+08:00 ERROR 3924 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-14T09:49:28.615+08:00 ERROR 3924 --- [http-nio-8080-exec-10] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-14T09:49:29.928+08:00 ERROR 3924 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.

@@ -1,0 +1,7 @@
+2025-08-12T18:36:26.808+08:00  INFO 34252 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Started IArticleServiceImplTest in 3.138 seconds (process running for 4.27)
+2025-08-12T18:36:27.986+08:00  INFO 34252 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T18:36:28.130+08:00  INFO 34252 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fafa76d
+2025-08-12T18:36:28.132+08:00  INFO 34252 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T18:36:28.233+08:00  INFO 34252 --- [main] c.f.service.Impl.IArticleServiceImpl     : 删除帖子成功！！
+2025-08-12T18:36:28.260+08:00  INFO 34252 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-12T18:36:28.284+08:00  INFO 34252 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

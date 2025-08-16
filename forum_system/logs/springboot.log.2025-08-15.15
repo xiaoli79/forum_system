@@ -1,0 +1,6 @@
+2025-08-15T08:32:43.899+08:00  WARN 23908 --- [http-nio-8080-exec-1] c.f.service.Impl.UserServiceImpl         : code=1002, message=参数校验失败
+2025-08-15T08:32:43.907+08:00 ERROR 23908 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : ⽤⼾名或密码错误
+2025-08-15T08:32:48.677+08:00  WARN 23908 --- [http-nio-8080-exec-6] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [152] milliseconds.
+2025-08-15T08:32:53.238+08:00 ERROR 23908 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-15T08:33:37.780+08:00 ERROR 23908 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-15T08:33:37.963+08:00 ERROR 23908 --- [http-nio-8080-exec-6] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.

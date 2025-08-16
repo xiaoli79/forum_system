@@ -1,0 +1,6 @@
+2025-08-12T09:00:14.912+08:00 ERROR 33108 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
+2025-08-12T09:00:17.953+08:00  WARN 33108 --- [http-nio-8080-exec-6] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [160] milliseconds.
+2025-08-12T09:00:20.474+08:00 ERROR 33108 --- [http-nio-8080-exec-10] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-12T09:04:53.152+08:00  INFO 33108 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T09:04:53.260+08:00  INFO 33108 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T09:04:53.263+08:00  INFO 33108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...

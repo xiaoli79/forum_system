@@ -1,0 +1,7 @@
+2025-08-14T18:40:39.643+08:00  INFO 24980 --- [main] c.forum_system.ForumSystemApplication    : Started ForumSystemApplication in 2.333 seconds (process running for 2.882)
+2025-08-14T18:40:49.776+08:00  INFO 24980 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-14T18:40:49.777+08:00  INFO 24980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-14T18:40:49.779+08:00  INFO 24980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-14T18:40:49.806+08:00 ERROR 24980 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-14T18:40:49.857+08:00 ERROR 24980 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-14T18:40:50.700+08:00  INFO 24980 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...

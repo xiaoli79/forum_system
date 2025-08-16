@@ -1,0 +1,6 @@
+2025-08-14T18:45:31.455+08:00  INFO 27700 --- [main] c.forum_system.ForumSystemApplication    : Starting ForumSystemApplication using Java 17.0.12 with PID 27700 (E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system\target\classes started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-14T18:45:31.460+08:00  INFO 27700 --- [main] c.forum_system.ForumSystemApplication    : The following 1 profile is active: "dev"
+2025-08-14T18:45:32.332+08:00  INFO 27700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-14T18:45:32.340+08:00  INFO 27700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T18:45:32.346+08:00  INFO 27700 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-14T18:45:32.389+08:00  INFO 27700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext

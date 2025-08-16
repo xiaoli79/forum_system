@@ -1,0 +1,1 @@
+2025-08-10T16:33:39.353+08:00 ERROR 29348 --- [http-nio-8080-exec-6] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.

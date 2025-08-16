@@ -17,4 +17,7 @@ public interface IBoardService {
 
 
     void addOneArticleCountById(Long id);
+
+
+    void subOneArticleCountById(Long id);
 }

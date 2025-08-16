@@ -10,10 +10,12 @@ import com.forum_system.utils.MD5Util;
 import com.forum_system.utils.UUIDUtils;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
+import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -112,6 +114,90 @@ public class UserController {
         return AppResult.success(user);
 
     }
+
+
+
+//    接收参数,对参数作非空校验!!
+    @RequestMapping("/modifyInfo")
+    public AppResult modifyInfo(HttpServletRequest request,
+                                @RequestParam( value = "username" ,required = false) String username,
+                                @RequestParam( value = "nickname" ,required = false) String nickname,
+                                @RequestParam( value = "gender" ,required = false) Byte gender,
+                                @RequestParam( value = "email" ,required = false) String email,
+                                @RequestParam( value = "phoneNum" ,required = false) String phoneNum,
+                                @RequestParam( value = "remark" ,required = false) String remark) {
+
+        if(StringUtils.isEmpty(username) && StringUtils.isEmpty(nickname) && gender == null && email == null && phoneNum == null && remark == null
+        ){
+            return AppResult.failed("请输入要更改的内容");
+        }
+
+//      从session中获取用户信息!!
+        HttpSession session = request.getSession(false);
+        User user = (User)session.getAttribute(AppConfig.USER_SESSION);
+        User updateUser = new User();
+
+        updateUser.setId(user.getId());
+        updateUser.setUsername(username);
+        updateUser.setNickname(nickname);
+        updateUser.setGender(gender);
+        updateUser.setEmail(email);
+        updateUser.setPhonenum(phoneNum);
+        updateUser.setRemark(remark);
+
+
+//      调用service
+        userServiceImpl.modifyUser(updateUser);
+//        查询最新的用户信息
+        user = userServiceImpl.selectById(user.getId());
+//        把最新的用户信息设置到session中!!
+        session.setAttribute(AppConfig.USER_SESSION, user);
+        return AppResult.success(user);
+    }
+
+
+        @RequestMapping("/modifyPwd")
+//      修改密码
+        public AppResult modifyPassword(HttpServletRequest request,
+                                        @RequestParam("oldPassword") @NonNull String oldPassword,
+                                        @RequestParam("newPassword") @NonNull String newPassword,
+                                        @RequestParam("passwordRepeat") @NonNull String passwordRepeat) {
+//         新密码和再次输入的密码是否相同！！
+            if(!newPassword.equals(passwordRepeat)){
+                return AppResult.failed(ResultCode.FAILED_TWO_PWD_NOT_SAME);
+            }
+//         从session中获取用户信息
+            HttpSession session = request.getSession(false);
+            User user = (User)session.getAttribute(AppConfig.USER_SESSION);
+//         进行修改密码！
+            userServiceImpl.modifyPassword(user.getId(),newPassword,oldPassword);
+
+//          销毁session
+            if(session != null){
+                session.invalidate();
+            }
+
+            return AppResult.success(user);
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

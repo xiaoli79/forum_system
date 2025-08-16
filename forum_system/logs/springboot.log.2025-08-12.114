@@ -1,0 +1,7 @@
+2025-08-12T19:44:23.256+08:00  WARN 35592 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [161] milliseconds.
+2025-08-12T19:44:27.503+08:00 ERROR 35592 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : No static resource avatar.png.
+2025-08-12T19:45:06.432+08:00 ERROR 35592 --- [http-nio-8080-exec-10] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-12T19:45:09.811+08:00  INFO 35592 --- [http-nio-8080-exec-1] c.f.service.Impl.IArticleServiceImpl     : 删除帖子成功！！
+2025-08-12T19:48:34.743+08:00 ERROR 35592 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-12T19:52:25.862+08:00  INFO 35592 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T19:52:25.995+08:00  INFO 35592 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

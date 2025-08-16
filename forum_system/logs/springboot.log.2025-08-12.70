@@ -1,0 +1,7 @@
+2025-08-12T13:37:49.863+08:00  INFO 31356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-12T13:37:49.951+08:00 ERROR 31356 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
+2025-08-12T13:37:49.971+08:00  INFO 31356 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T13:37:50.109+08:00  INFO 31356 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cb0b135
+2025-08-12T13:37:50.110+08:00  INFO 31356 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T13:37:53.771+08:00 ERROR 31356 --- [http-nio-8080-exec-9] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-12T13:38:09.166+08:00 ERROR 31356 --- [http-nio-8080-exec-6] c.f.exception.GlobalExceptionHandler     : No static resource null.

@@ -1,0 +1,6 @@
+2025-08-12T13:23:06.946+08:00  WARN 28532 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [164] milliseconds.
+2025-08-12T13:23:11.437+08:00 ERROR 28532 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-12T13:23:24.506+08:00 ERROR 28532 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: ""
+2025-08-12T13:23:30.735+08:00 ERROR 28532 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-12T13:23:32.084+08:00 ERROR 28532 --- [http-nio-8080-exec-5] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-12T13:23:34.353+08:00 ERROR 28532 --- [http-nio-8080-exec-5] c.f.exception.GlobalExceptionHandler     : No static resource null.

@@ -31,5 +31,8 @@ public interface ArticleMapper {
     Article selectDetailById(@Param("id") long id);
 
 
+    List<Article> selectByUserId(@Param("userId") Long userId);
+
+
 
 }

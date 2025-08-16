@@ -1,0 +1,7 @@
+2025-08-16T15:00:38.465+08:00  INFO 3296 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-16T15:00:41.980+08:00 ERROR 3296 --- [http-nio-8080-exec-8] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-16T15:00:42.272+08:00 ERROR 3296 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-16T15:00:42.995+08:00 ERROR 3296 --- [http-nio-8080-exec-5] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-16T15:01:42.748+08:00  WARN 3296 --- [http-nio-8080-exec-1] c.f.service.Impl.MessageServiceImpl      : code=1002, message=参数校验失败
+2025-08-16T15:01:42.749+08:00 ERROR 3296 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : 参数校验失败
+2025-08-16T15:01:46.555+08:00  WARN 3296 --- [http-nio-8080-exec-9] c.f.service.Impl.MessageServiceImpl      : code=1002, message=参数校验失败

@@ -1,0 +1,7 @@
+2025-08-15T18:47:06.223+08:00  WARN 33056 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [101] milliseconds.
+2025-08-15T18:47:08.252+08:00 ERROR 33056 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-15T18:47:17.614+08:00 ERROR 33056 --- [http-nio-8080-exec-6] c.f.exception.GlobalExceptionHandler     : No static resource avatar.png.
+2025-08-15T18:47:28.551+08:00 ERROR 33056 --- [http-nio-8080-exec-7] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-15T18:47:52.792+08:00 ERROR 33056 --- [http-nio-8080-exec-10] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-15T18:47:58.535+08:00 ERROR 33056 --- [http-nio-8080-exec-9] c.f.exception.GlobalExceptionHandler     : No static resource avatar.png.
+2025-08-15T18:48:51.959+08:00 ERROR 33056 --- [http-nio-8080-exec-6] c.f.exception.GlobalExceptionHandler     : No static resource avatar.png.

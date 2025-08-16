@@ -68,7 +68,7 @@
     let boardData = activeLiEl.data('board');
     // 导航栏版块Item是否绑定版块数据
     if (boardData) {
-      // 构造query string 
+      // 构造query string
       queryString = '?boardId=' + boardData.id;
       // 获取版块信息
       getBoardInfo(boardData.id);
@@ -79,7 +79,7 @@
     }
 
     // ========================= 获取版块信息 =======================
-    // 
+    //
     function getBoardInfo (boardId) {
       if (!boardId) {
         return;
@@ -108,7 +108,7 @@
           })
         }
 
-        
+
       });
     }
 

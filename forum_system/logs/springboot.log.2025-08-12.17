@@ -1,0 +1,8 @@
+2025-08-12T08:54:22.870+08:00  INFO 34132 --- [main] c.forum_system.ForumSystemApplication    : The following 1 profile is active: "dev"
+2025-08-12T08:54:23.716+08:00  INFO 34132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-12T08:54:23.725+08:00  INFO 34132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T08:54:23.725+08:00  INFO 34132 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-12T08:54:23.769+08:00  INFO 34132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T08:54:23.769+08:00  INFO 34132 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 857 ms
+2025-08-12T08:54:24.165+08:00  INFO 34132 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-12T08:54:24.445+08:00  INFO 34132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'

@@ -1,0 +1,7 @@
+2025-08-12T12:02:07.208+08:00  INFO 11476 --- [main] c.forum_system.ForumSystemApplication    : Started ForumSystemApplication in 2.014 seconds (process running for 2.504)
+2025-08-12T12:02:18.271+08:00  INFO 11476 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T12:02:18.272+08:00  INFO 11476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T12:02:18.272+08:00  INFO 11476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-12T12:02:18.298+08:00 ERROR 11476 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
+2025-08-12T12:02:23.607+08:00  INFO 11476 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T12:02:23.802+08:00  INFO 11476 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@eb230b4

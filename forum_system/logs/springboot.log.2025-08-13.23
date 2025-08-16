@@ -1,0 +1,8 @@
+2025-08-13T22:07:54.450+08:00  INFO 25676 --- [http-nio-8080-exec-2] c.f.s.Impl.ArticleReplyServiceImpl       : 回复成功！！
+2025-08-13T22:08:01.354+08:00 ERROR 25676 --- [http-nio-8080-exec-9] c.f.exception.GlobalExceptionHandler     : No static resource avatar.png.
+2025-08-13T22:08:04.717+08:00 ERROR 25676 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-13T22:08:17.740+08:00  INFO 25676 --- [http-nio-8080-exec-3] c.f.s.Impl.ArticleReplyServiceImpl       : 回复成功！！
+2025-08-13T22:08:22.550+08:00 ERROR 25676 --- [http-nio-8080-exec-10] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-13T22:09:00.822+08:00  INFO 25676 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-13T22:09:00.912+08:00  INFO 25676 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-13T22:09:00.915+08:00  INFO 25676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...

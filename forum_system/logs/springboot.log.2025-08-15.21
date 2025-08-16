@@ -1,0 +1,6 @@
+2025-08-15T08:37:41.978+08:00 ERROR 10084 --- [http-nio-8080-exec-2] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-15T08:37:41.993+08:00 ERROR 10084 --- [http-nio-8080-exec-5] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-15T08:37:47.165+08:00 ERROR 10084 --- [http-nio-8080-exec-6] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-15T11:13:07.461+08:00  WARN 10084 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m29s51ms297µs500ns).
+2025-08-15T13:27:31.680+08:00  INFO 10084 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T13:27:31.828+08:00  INFO 10084 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

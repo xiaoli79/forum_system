@@ -1,0 +1,7 @@
+2025-08-14T14:33:46.656+08:00  INFO 15888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T14:33:46.803+08:00  INFO 15888 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71df5f30
+2025-08-14T14:33:46.806+08:00  INFO 15888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T14:33:46.867+08:00  WARN 15888 --- [main] c.f.service.Impl.UserServiceImpl         : code=1002, message=参数校验失败
+2025-08-14T14:33:46.922+08:00  INFO 15888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T14:33:46.960+08:00  INFO 15888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T14:41:10.781+08:00  INFO 30012 --- [main] c.f.service.Impl.UserServiceImplTest     : Starting UserServiceImplTest using Java 17.0.12 with PID 30012 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)

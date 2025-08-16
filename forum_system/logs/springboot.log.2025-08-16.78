@@ -1,0 +1,6 @@
+2025-08-16T16:37:23.332+08:00  INFO 17508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-16T16:37:23.336+08:00  INFO 17508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-16T16:37:23.523+08:00  WARN 17508 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [133] milliseconds.
+2025-08-16T16:37:23.602+08:00 ERROR 17508 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : Cannot invoke "com.forum_system.model.User.getState()" because "user" is null
+2025-08-16T16:37:26.397+08:00  INFO 17508 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-16T16:37:26.512+08:00  INFO 17508 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@119cf293

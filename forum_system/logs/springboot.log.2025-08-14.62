@@ -1,0 +1,7 @@
+2025-08-14T18:00:58.615+08:00 ERROR 34600 --- [http-nio-8080-exec-3] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-14T18:01:01.359+08:00 ERROR 34600 --- [http-nio-8080-exec-6] c.f.exception.GlobalExceptionHandler     : No static resource .well-known/appspecific/com.chrome.devtools.json.
+2025-08-14T18:01:04.043+08:00 ERROR 34600 --- [http-nio-8080-exec-1] c.f.exception.GlobalExceptionHandler     : No static resource null.
+2025-08-14T18:02:30.641+08:00  INFO 34600 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-14T18:02:30.722+08:00  INFO 34600 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-14T18:02:30.728+08:00  INFO 34600 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T18:02:30.736+08:00  INFO 34600 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

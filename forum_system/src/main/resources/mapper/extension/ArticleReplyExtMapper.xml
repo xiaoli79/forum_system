@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.forum_system.dao.ArticleReplyMapper">
+<!--    这个可以写成一个单标签!!-->
+        <resultMap id="AllInfoResultMap" type="com.forum_system.model.ArticleReply" extends="BaseResultMap">
+            <association property="user" resultMap="com.forum_system.dao.UserMapper.BaseResultMap" columnPrefix="u_"/>
+        </resultMap>
+    <select id="selectByArticleId" parameterType="java.lang.Long" resultMap="AllInfoResultMap">
+        select
+            u.id as u_id,
+            u.avatarUrl as u_avatarUrl,
+            u.nickname as u_nickname,
+            ar.id,
+            ar.articleId,
+            ar.postUserId,
+            ar.replyId,
+            ar.replyUserId,
+            ar.content,
+            ar.likeCount,
+            ar.state,
+            ar.createTime,
+            ar.updateTime
+        from t_article_reply ar , t_user u
+        where ar.postUserId = u.id and ar.articleId = #{articleId} and ar.deleteState = 0 ORDER BY ar.createTime DESC
+    </select>
+
+</mapper>

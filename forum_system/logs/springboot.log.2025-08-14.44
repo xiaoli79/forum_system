@@ -1,0 +1,7 @@
+2025-08-14T13:26:52.398+08:00  INFO 12480 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-14T13:26:52.406+08:00  INFO 12480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T13:26:52.414+08:00  INFO 12480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T14:21:59.007+08:00  INFO 28964 --- [main] c.f.service.Impl.UserServiceImplTest     : Starting UserServiceImplTest using Java 17.0.12 with PID 28964 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-14T14:21:59.009+08:00  INFO 28964 --- [main] c.f.service.Impl.UserServiceImplTest     : The following 1 profile is active: "dev"
+2025-08-14T14:22:00.948+08:00  INFO 28964 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-14T14:22:01.565+08:00  INFO 28964 --- [main] c.f.service.Impl.UserServiceImplTest     : Started UserServiceImplTest in 2.978 seconds (process running for 4.142)

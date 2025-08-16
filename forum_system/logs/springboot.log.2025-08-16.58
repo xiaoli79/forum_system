@@ -1,0 +1,7 @@
+2025-08-16T15:23:17.390+08:00  INFO 17288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-16T15:23:17.391+08:00  INFO 17288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-16T15:23:17.393+08:00  INFO 17288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-16T15:23:17.488+08:00 ERROR 17288 --- [http-nio-8080-exec-4] c.f.exception.GlobalExceptionHandler     : Cannot invoke "jakarta.servlet.http.HttpSession.getAttribute(String)" because "session" is null
+2025-08-16T15:23:17.503+08:00  INFO 17288 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-16T15:23:17.579+08:00  WARN 17288 --- [http-nio-8080-exec-9] c.f.controller.MessageController         : code=1104, message=您已被禁⾔, 请联系管理员, 并重新登录.
+2025-08-16T15:23:17.579+08:00  WARN 17288 --- [http-nio-8080-exec-5] c.f.controller.MessageController         : code=1104, message=您已被禁⾔, 请联系管理员, 并重新登录.

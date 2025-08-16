@@ -1,0 +1,7 @@
+2025-08-12T18:34:21.630+08:00  INFO 24212 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-12T18:34:22.284+08:00  INFO 24212 --- [main] c.f.s.Impl.IArticleServiceImplTest       : Started IArticleServiceImplTest in 2.998 seconds (process running for 4.077)
+2025-08-12T18:34:23.567+08:00  INFO 24212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T18:34:23.712+08:00  INFO 24212 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c2b65cc
+2025-08-12T18:34:23.715+08:00  INFO 24212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T18:34:23.841+08:00  INFO 24212 --- [main] c.f.service.Impl.IArticleServiceImpl     : 删除帖子成功！！
+2025-08-12T18:34:23.878+08:00  INFO 24212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...

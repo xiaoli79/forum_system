@@ -488,6 +488,35 @@
 
       // 发送站内信请求 url = message/send, 成功与失败都调用cleanMessageForm()方法，清空输入框
       $.ajax({
+        tyoe:"get",
+        url:"message/send",
+        contentType: "application/x-www-form-urlencoded",
+        data:postData,
+        success:function (result){
+
+          if(result.code == 0){
+            cleanMessageForm();
+            $.toast({
+              heading:"成功",
+              text:result.message,
+              icon:"success"
+            });
+          }else{
+            $.toast({
+              heading:"警告",
+              text:result.message,
+              icon:"warning"
+            });
+          }
+
+        },error:function () {
+          $.toast({
+            heading:"错误",
+            text:"访问出现问题，请联系管理员",
+            icon:'error'
+          });
+
+        }
 
       });
     });
@@ -504,14 +533,47 @@
       cleanMessageForm();
     });
 
+
+
     // ============ 获取用户未读站内信数量 ============
     // url = message/getUnreadCount
     // 成功后，处理小红点是否显示 #index_nva_message_badge
     function requestMessageUnreadCount () {
       $.ajax({
+        tyoe:"get",
+        url:"message/getUnreadCount",
+        contentType: "application/x-www-form-urlencoded",
+        success:function (result){
+
+          if(result.code == 0){
+            //判断站内信的数量，判断是否显示小圆点！！
+            let messsageBadgeEl = $('#index_nva_message_badge');
+            if(result.data > 0){
+              messsageBadgeEl.show();
+            }else{
+              messsageBadgeEl.hide();
+            }
+
+          }else{
+            $.toast({
+              heading:"警告",
+              text:result.message,
+              icon:"warning"
+            });
+          }
+
+        },error:function () {
+          $.toast({
+            heading:"错误",
+            text:"访问出现问题，请联系管理员",
+            icon:'error'
+          });
+
+        }
         
       });
     }
+
     requestMessageUnreadCount();
     
 
@@ -519,7 +581,30 @@
     // 成功后，调用buildMessageList() 方法构建站内信列表
     function requestMessageList () {
       $.ajax({
-        
+        type:"get",
+        url:"message/getAll",
+        success:function (result){
+          if(result.code == 0){
+            buildMessageList(result.data);
+            // $.toast({
+            //   heading: "成功",
+            //   text: "成功获取用户的站内信",
+            //   icon: "success"
+            // });
+          }else{
+            $.toast({
+              heading:"警告",
+              text:result.message,
+              icon:"warning"
+            });
+          }
+        },error:function () {
+          $.toast({
+            heading:"错误",
+            text:"访问出现问题，请联系管理员",
+            icon:'error'
+          });
+        }
       });
     }
     requestMessageList();
@@ -599,6 +684,37 @@
           $('#btn_index_message_reply').show();
           $('#btn_index_send_message_reply').hide();
 
+
+
+          if(messageItem.state == 0 && statusDotEl.hasClass('status-dot-animated bg-red')){
+            $.ajax({
+              type:"get",
+              url:"message/markRead",
+              contentType:"application/x-www-form-urlencoded",
+              data:{id : messageItem.id},
+              success:function (result){
+                if(result.code == 0){
+                  statusDotEl.removeClass(('status-dot-animated bg-red'));
+                  statusDescEl.html('[已读]');
+                  messageItem.state = 1;
+                }else{
+                  $.toast({
+                    heading:"警告",
+                    text:result.message,
+                    icon:"warning"
+                  });
+                }
+              },error:function () {
+                $.toast({
+                  heading:"错误",
+                  text:"访问出现问题，请联系管理员",
+                  icon:'error'
+                });
+
+              }
+            })
+          }
+
         });
 
         // 添加到列表
@@ -666,7 +782,34 @@
       // // 清空输入区
       // cleanMessageReplyForm ();
       $.ajax ({
-        
+        type:"get",
+        url:"message/reply",
+        contentType:"application/x-www-form-urlencoded",
+        data:postData,
+        success:function (result){
+          if(result.code != 0){
+            $.toast({
+              heading:"警告",
+              text:result.message,
+              icon:"warning"
+            });
+          }else {
+            requestMessageUnreadCount();
+            requestMessageList();
+            $.toast({
+              heading:"成功",
+              text:"成功回复站内信",
+              icon:'success'
+            });
+          }
+        },
+        error:function (){
+          $.toast({
+            heading:"错误",
+            text:"访问出现问题，请联系管理员",
+            icon:'error'
+          });
+        }
       });
 
 

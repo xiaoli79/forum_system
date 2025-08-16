@@ -1,0 +1,7 @@
+2025-08-16T15:55:09.480+08:00  INFO 17288 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-16T15:55:23.600+08:00  INFO 36044 --- [main] c.f.service.Impl.MessageServiceImplTest  : Starting MessageServiceImplTest using Java 17.0.12 with PID 36044 (started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-16T15:55:23.603+08:00  INFO 36044 --- [main] c.f.service.Impl.MessageServiceImplTest  : The following 1 profile is active: "dev"
+2025-08-16T15:55:25.580+08:00  INFO 36044 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-16T15:55:26.207+08:00  INFO 36044 --- [main] c.f.service.Impl.MessageServiceImplTest  : Started MessageServiceImplTest in 3.004 seconds (process running for 4.084)
+2025-08-16T15:55:27.430+08:00  INFO 36044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-16T15:55:27.581+08:00  INFO 36044 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c2fb9e8

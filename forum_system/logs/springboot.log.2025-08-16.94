@@ -1,0 +1,6 @@
+2025-08-16T16:52:29.567+08:00  INFO 21488 --- [main] c.forum_system.ForumSystemApplication    : Started ForumSystemApplication in 1.946 seconds (process running for 2.45)
+2025-08-16T16:52:36.723+08:00  INFO 21488 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-16T16:52:36.791+08:00  INFO 21488 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-16T16:52:40.193+08:00  INFO 8932 --- [main] c.forum_system.ForumSystemApplication    : Starting ForumSystemApplication using Java 17.0.12 with PID 8932 (E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system\target\classes started by HP in E:\computer_study\Java\Idea\Java_Project\Spring\forum_system\forum_system)
+2025-08-16T16:52:40.201+08:00  INFO 8932 --- [main] c.forum_system.ForumSystemApplication    : The following 1 profile is active: "dev"
+2025-08-16T16:52:41.242+08:00  INFO 8932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
